@@ -1,21 +1,21 @@
-# footer {
+#footer {
   padding: 10px;
 }
 
 .footer-icons {
   display: flex;
-  align-items: left; 
-  justify-content: flex-end; 
+  align-items: center; /* Changed from 'left' to 'center' for vertical alignment */
+  justify-content: flex-end;
 }
 
 .footer-icons > div {
-  width: 10px;
-  height: 10px;
+  width: 20px; /* Increased width for better visibility */
+  height: 20px; /* Increased height for better visibility */
 }
 
 .facebook-icon img,
 .twitter-icon img,
 .instagram-icon img {
-  max-width: 10%;
-  max-height: 10%;
+  max-width: 100%; /* Changed from 10% to 100% for better scaling */
+  max-height: 100%; /* Changed from 10% to 100% for better scaling */
 }
