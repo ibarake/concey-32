@@ -4,7 +4,7 @@
     <div class="nav">
       <ul class="cf">
         {% # logic brackets %}
-        {% for link in section.settings['footer-menu'] %}
+        {% for link in section.settings.footer-menu.links %}
           <li class="">
             {% # return of a value or object %}
             <a href="{{ link.url }}">{{ link.title }}</a>
