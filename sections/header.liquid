@@ -1,13 +1,13 @@
 <header>
   <div class="main-header">
-    <div class="nav-button">
+    <div class="nav-icon nav-button">
       {% render 'nav-icon' %}
     </div>
     <div class="site-logo">
       {{ settings.logo | img_url | img_tag: 'logo', settings.logo.alt, '500x500' }}
     </div>
 
-    <div class="cart-drawer-toggle">
+    <div class="nav-icon cart-drawer-toggle">
       {% render 'cart-icon' %}
     </div>
   </div>
