@@ -5,7 +5,7 @@
 .footer-icons {
   display: flex;
   align-items: left; 
-  justify-content: space-evenly; 
+  justify-content: flex-end; 
 }
 
 .footer-icons > div {
