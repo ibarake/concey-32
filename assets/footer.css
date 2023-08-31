@@ -1,5 +1,8 @@
+#footer {
+  padding: 40px 100px 40px 100px;
+}
 .footer-icons {
-    display: flex;
-    align-items: center;
-    justify: flex-end;
+  display: flex;
+  align-items: center;
+  justify: flex-end;
 }
