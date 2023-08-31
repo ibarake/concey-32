@@ -13,6 +13,17 @@
       </ul>
     </div>
   </nav>
+  {% # Social Media Icons %}
+  <div class = "facebook-button">
+    {% render 'facebook-icon' %}}
+  </div>
+  <div class = "twitter-button">
+    {% render 'twitter-icon' %}}
+  </div>
+  <div class = "instagram-button">
+    {% render 'instagram-icon' %}}
+  </div>
+  
   <div
     class="sqs-layout sqs-grid-1 columns-1"
     data-layout-label="Left Footer Content"
@@ -29,80 +40,42 @@
       </div>
     </div>
   </div>
-  <div
-    class="sqs-layout sqs-grid-1 columns-1"
-    data-layout-label="Right Footer Content"
-    data-type="block-field"
-    id="footerBlockRight"
-  >
+  <div class="sqs-layout sqs-grid-1 columns-1" data-layout-label="Right Footer Content" data-type="block-field" id="footerBlockRight">
     <div class="row sqs-row">
-      <div class="col sqs-col-1 span-1">
-        <div
-          class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2"
-          data-block-type="54"
-          id="block-f89c2d4ff9e83cab80a7"
-        >
-          <div class="sqs-block-content">
-            <div class="sqs-blockStatus sqs-blockStatus--overlayMode" data-state="invalid">
-              <div class="sqs-blockStatus-disclosure">
-                <svg
-                  class="sqs-blockStatus-alert-badge"
-                  width="22"
-                  height="22"
-                  viewBox="0 0 22 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M11 4C7.13401 4 4 7.13401 4 11C4 14.866 7.13401 18 11 18C14.866 18 18 14.866 18 11C18 7.13401 14.866 4 11 4ZM2 11C2 6.02944 6.02944 2 11 2C15.9706 2 20 6.02944 20 11C20 15.9706 15.9706 20 11 20C6.02944 20 2 15.9706 2 11Z"
-                      fill="currentColor" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 13V6H12V13H10Z"
-                      fill="currentColor" />
-                  <path d="M10 14H12V16H10V14Z" fill="currentColor" />
-                </svg>
-              </div>
+        <div class="col sqs-col-1 span-1">
+            <div class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54" id="block-f89c2d4ff9e83cab80a7">
+                <div class="sqs-block-content">
+                    <nav class="sqs-svg-icon--list">
+                        <a href="#" target="_blank" class="sqs-svg-icon--wrapper twitter" aria-label="">
+                            <div>
+                                <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+                                    <use class="sqs-use--icon" xlink:href="#twitter-icon"></use>
+                                    <use class="sqs-use--mask" xlink:href="#twitter-mask"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" target="_blank" class="sqs-svg-icon--wrapper facebook" aria-label="">
+                            <div>
+                                <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+                                    <use class="sqs-use--icon" xlink:href="#facebook-icon"></use>
+                                    <use class="sqs-use--mask" xlink:href="#facebook-mask"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" target="_blank" class="sqs-svg-icon--wrapper instagram" aria-label="">
+                            <div>
+                                <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+                                    <use class="sqs-use--icon" xlink:href="#instagram-icon"></use>
+                                    <use class="sqs-use--mask" xlink:href="#instagram-mask"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </nav>
+                </div>
             </div>
-            <div
-              class="sqs-svg-icon--outer social-icon-alignment-right social-icons-color-black social-icons-size-small social-icons-style-regular sqs-block-is-placeholder"
-              data-block-state="invalid"
-            >
-              <style>
-                #block-f89c2d4ff9e83cab80a7 .social-icons-style-border .sqs-svg-icon--wrapper {
-                    box-shadow: 0 0 0 2px inset;
-
-                    border: none;
-                }
-              </style>
-              <nav class="sqs-svg-icon--list">
-                <a href="" target="_blank" class="sqs-svg-icon--wrapper twitter" aria-label="">
-                  <div>
-                    <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
-                      <use class="sqs-use--icon" xlink:href="#twitter-icon"></use>
-                      <use class="sqs-use--mask" xlink:href="#twitter-mask"></use>
-                    </svg>
-                  </div></a
-                ><a href="" target="_blank" class="sqs-svg-icon--wrapper facebook" aria-label="">
-                  <div>
-                    <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
-                      <use class="sqs-use--icon" xlink:href="#facebook-icon"></use>
-                      <use class="sqs-use--mask" xlink:href="#facebook-mask"></use>
-                    </svg>
-                  </div></a
-                ><a href="" target="_blank" class="sqs-svg-icon--wrapper instagram" aria-label="">
-                  <div>
-                    <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
-                      <use class="sqs-use--icon" xlink:href="#instagram-icon"></use>
-                      <use class="sqs-use--mask" xlink:href="#instagram-mask"></use>
-                    </svg>
-                  </div>
-                </a>
-              </nav>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 </footer>
 
 {% # id must have "-" between words %}
