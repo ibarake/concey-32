@@ -16,6 +16,8 @@
 .facebook-icon img,
 .twitter-icon img,
 .instagram-icon img {
+  width: 15%;
+  height: 15%;
   max-width: 50%; /* Changed from 10% to 100% for better scaling */
   max-height: 50%; /* Changed from 10% to 100% for better scaling */
 }
