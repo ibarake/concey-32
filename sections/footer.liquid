@@ -1,22 +1,18 @@
 <h1>FOOTER</h1>
-
-<div class="footer-nav">
+<footer id="footer" class="cf">
   <nav id="footer-navigation" class="" data-content-field="navigation-footer-navigation">
     <div class="nav">
       <ul class="cf">
-        <li class="">
-          <a href="/terms-conditions">Terms & Conditions</a>
-        </li>
-
-        <li class="">
-          <a href="/shipping-info">Shipping Info</a>
-        </li>
+        {% # logic brackets %}
+        {% for link in section.settings['footer-menu'] %}
+          <li class="">
+            {% # return of a value or object %}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </nav>
-</div>
-
-<footer id="footer" class="cf">
   <div
     class="sqs-layout sqs-grid-1 columns-1"
     data-layout-label="Left Footer Content"
@@ -109,10 +105,18 @@
   </div>
 </footer>
 
+{% # id must have "-" between words %}
+
 {% schema %}
 {
   "name": "Footer",
-  "settings": []
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "footer-menu",
+      "label": "Menu"
+    }
+  ]
 }
 {% endschema %}
 
