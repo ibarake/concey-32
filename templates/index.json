@@ -1,7 +1,12 @@
 {
   "sections": {
+    "main-banner": {
+      "type": "main-banner",
+      "settings": {
+      }
+    }
   },
   "order": [
-
+    "main-banner"
   ]
 }
