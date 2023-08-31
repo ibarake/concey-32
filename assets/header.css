@@ -28,6 +28,8 @@ header nav ul{
   width: 50%;
   margin: auto;
   justify-content: space-between;
+  max-height: 50px;
+  transform: scaleY(0);
 }
 header nav li{
   padding: 20px 30px;
