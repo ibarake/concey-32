@@ -1,0 +1,35 @@
+#footer {
+  position: relative;
+  padding-left: 20%; 
+  padding-right: 20%; 
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 20;
+  margin: 20;
+}
+  
+.footer-menu li {
+  margin-bottom: 10px; 
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center; 
+  justify-content: space-evenly; 
+  border: 1px solid black;
+
+}
+
+.footer-icons > div {
+  width: 10px;
+  height: 10px;
+}
+
+.facebook-icon img,
+.twitter-icon img,
+.instagram-icon img {
+  max-width: 50%;
+  max-height: 50%;
+}
