@@ -12,6 +12,7 @@
 } 
 .nav-icon svg{
   height: 100%;
+  color: var(--second-gray);
 }
 
 header nav{
@@ -28,3 +29,4 @@ header nav ul{
 header nav li{
   padding: 20px 30px;
 }
+
