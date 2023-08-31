@@ -15,11 +15,13 @@
 }
 
 .footer-icons {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   display: inline-block;
-  gap: 50px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 170ms ease-in-out;
+  z-index: 0
 }
 
 .footer-icons > div {
