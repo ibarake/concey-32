@@ -20,7 +20,7 @@ header nav{
 header nav ul{
     display: flex;
   flex-direction: row;
+  list-style: none;
 }
 header nav ul{
-  list-style: none;
 }
