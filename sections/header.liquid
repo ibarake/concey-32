@@ -1,7 +1,7 @@
 <header>
   <div class="main-header">
     <div class="nav-button">
-      {% include 'nav-icon' %}
+      {% render 'nav-icon' %}
     </div>
     <div class="site-logo">
       {{ settings.logo | img_url | img_tag: 'logo', settings.logo.alt, '300x300' }}
