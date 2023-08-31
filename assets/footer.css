@@ -17,11 +17,6 @@
 .footer-icons {
   display: inline-block;
   position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 170ms ease-in-out;
-  z-index: 0
 }
 
 .footer-icons > div {
