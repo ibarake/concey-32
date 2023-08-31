@@ -7,6 +7,12 @@
   width: calc(100% - 200px);
   padding: 40px 100px 40px 100px;
 }
+
+.main-header:hover + nav {
+    transform: scaleY(1);
+    transition: transform 0.3s ease-in-out; /* This will make the transformation smooth */
+}
+
 .nav-icon{
   height: 100%;
 } 
@@ -23,6 +29,7 @@ header nav{
   max-height: 50px;
   transform: scaleY(0);
 }
+
 header nav ul{
   display: flex;
   flex-direction: row;
