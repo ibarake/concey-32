@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      root: {
+        --main-gray: #f9f9f9;
+      }
+    </style>
     {{ 'header.css' | asset_url | stylesheet_tag }}
     {{ 'footer.css' | asset_url | stylesheet_tag }}
     <title>CONCEY 32</title>
