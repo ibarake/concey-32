@@ -1,11 +1,11 @@
 <h1>FOOTER</h1>
-<footer id="footer" class="cf">
-  <nav id="footer-navigation" class="" data-content-field="navigation-footer-navigation">
+<footer id="footer" class="footer">
+  <nav id="footer-navigation" class="footer-navigation" data-content-field="navigation-footer-navigation">
     <div class="nav">
-      <ul class="cf">
+      <ul class="footer-menu">
         {% # logic brackets %}
         {% for link in section.settings['footer-menu'].links %}
-          <li class="">
+          <li class="footer-menu-item">
             {% # return of a value or object %}
             <a href="{{ link.url }}">{{ link.title }}</a>
           </li>
@@ -14,17 +14,44 @@
     </div>
   </nav>
 
-  {% # Social Media Icons %}
-  <div class="facebook-button">
-    {% include 'facebook-icon' %}
+  <div class="footer-content">
+    <div class="footer-block-left">
+      <div class="footer-row">
+        <div class="footer-col">
+          <div class="footer-html-block">
+            <div class="footer-html-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="twitter-button">
-    {% include 'twitter-icon' %}
-  </div>
-  <div class="instagram-button">
-    {% include 'instagram-icon' %}
+
+  <div class="footer-content">
+    <div class="footer-block-right">
+      <div class="footer-row">
+        <div class="footer-col">
+          <div class="footer-social-icons">
+            <nav class="social-icon-list">
+              <div class="footer-icons">
+                <div class="facebook-icon">
+                  {% render 'facebook-icon' %}
+                </div>
+                <div class="twitter-icon">
+                  {% render 'twitter-icon' %}
+                </div>
+                <div class="instagram-icon">
+                  {% render 'instagram-icon' %}
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
+
+{% # THERE IS NO AUTOSAVE HERE (✖﹏✖) %}
 
 {% # id must have "-" between words %}
 
