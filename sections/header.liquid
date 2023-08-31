@@ -1,4 +1,12 @@
-<h1>HEADER</h1>
+<header>
+  <div class="main-header">
+    <div class="nav-button"></div>
+    <div class="site-logo">
+      {{ settings.logo | image_url | image_tag: 'logo', settings.logo.alt, '100x100' }}
+    </div>
+  </div>
+  <nav></nav>
+</header>
 {% schema %}
 {
   "name": "header",
