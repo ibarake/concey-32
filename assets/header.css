@@ -21,6 +21,6 @@ header nav ul{
     display: flex;
   flex-direction: row;
 }
-header nav li{
+header nav ul{
   list-style: none;
 }
