@@ -16,7 +16,7 @@
 
 .footer-icons {
   display: flex;
-  align-items: right; 
+  align-items: left; 
   justify-content: space-evenly; 
 }
 
