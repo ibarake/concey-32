@@ -7,7 +7,9 @@
       {{ settings.logo | img_url | img_tag: 'logo', settings.logo.alt, '300x300' }}
     </div>
 
-    <div class="cart-drawer-toggle"></div>
+    <div class="cart-drawer-toggle">
+      {% render 'cart-icon' %}
+    </div>
   </div>
   <nav></nav>
 </header>
