@@ -1,4 +1,21 @@
 {
   "current": {
+    "logo": "shopify:\/\/shop_images\/logo_with_MII_midnight_f45cd6de-07b5-4a2f-b3bb-2d61421ffab6.png",
+    "favicon": "shopify:\/\/shop_images\/C32_footer_logo_midnight.png",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
   }
 }
