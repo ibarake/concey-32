@@ -7,4 +7,5 @@
   align-items: center;
   justify: flex-end;
   flex-grow:1
+  flex-direction: row-reverse;
 }

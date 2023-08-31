@@ -16,4 +16,10 @@
 
 header nav{
   background-color: var(--main-gray);
+  display: flex;
+  flex-direction: row;
+}
+
+header nav li{
+  list-style: none;
 }
