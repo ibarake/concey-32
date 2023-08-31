@@ -1,7 +1,12 @@
 {
   "sections": {
+    "9d9a7c38-aabc-47e3-90ae-a8ff76c42195": {
+      "type": "main-banner",
+      "settings": {
+      }
+    }
   },
   "order": [
-
+    "9d9a7c38-aabc-47e3-90ae-a8ff76c42195"
   ]
 }
