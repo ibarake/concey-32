@@ -1,6 +1,7 @@
 #footer {
   position: relative;
-  padding: 20px; 
+  padding-left: 5%; 
+  padding-right: 5%; 
 }
 
 .footer-menu {
