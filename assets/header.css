@@ -21,6 +21,9 @@ header nav ul{
     display: flex;
   flex-direction: row;
   list-style: none;
+  width: 50%;
+  margin: auto;
 }
-header nav ul{
+header nav li{
+  
 }
