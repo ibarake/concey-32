@@ -7,3 +7,10 @@
   width: calc(100% - 200px);
   padding: 30px 100px 30px 100px;
 }
+
+.nav-button{
+  height: 100%;
+}
+.nav-cart{
+  height: 100%;
+}
