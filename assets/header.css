@@ -10,7 +10,7 @@
 
 .main-header:hover + nav {
     transform: scaleY(1);
-    transition: transform 0.3s ease-in-out; /* This will make the transformation smooth */
+    transition: transform 0.2s ease; /* This will make the transformation smooth */
     transform-origin: center top;
 }
 
