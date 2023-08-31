@@ -12,6 +12,9 @@
 } 
 .nav-icon svg{
   height: 100%;
+}
+
+.nav-icon svg path{
   color: var(--second-gray);
 }
 
