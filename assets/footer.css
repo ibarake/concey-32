@@ -3,8 +3,6 @@
 }
 
 .footer-icons {
-  display: flex;
-  align-items: center;
-  justify: flex-end;
+  text-align: right;
 }
 
