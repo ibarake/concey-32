@@ -1,5 +1,6 @@
 #footer {
   padding: 40px 100px 40px 100px;
+  
 }
 
 .footer-icons {
@@ -10,6 +11,16 @@
 .footer-icons .facebook-icon,
 .footer-icons .twitter-icon,
 .footer-icons .instagram-icon {
-    transform: scale(0.5); /* 0.5 means 50% of the original size */
+    transform: scale(0.5); 
+}
+
+#footer #footer-navigation .footer-menu-item {
+    display: inline-block; /* Display them inline-block */
+    margin-right: 20px; /* Add some spacing between them */
+}
+
+
+#footer #footer-navigation .footer-menu-item:last-child {
+    margin-right: 0;
 }
 
