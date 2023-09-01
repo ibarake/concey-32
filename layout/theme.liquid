@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% section 'custom-fonts' %}
     <style>
-      body{
+      @font-face {
+        font-family: "Proxima nova bold";
+        src: url("{{ 'Fontspring-DEMO-proximanova-bold' | asset_url }}") format("woff2");
+      }
+      @font-face {
+        font-family: "Proxima nova medium";
+        src: url("{{ 'Fontspring-DEMO-proximanova-medium' | asset_url }}") format("woff2");
+      }
+      @font-face {
+        font-family: "Proxima nova regular";
+        src: url("{{ 'Fontspring-DEMO-proximanova-regular' | asset_url }}") format("woff2");
+      }
+      @font-face {
+        font-family: "Proxima nova thin";
+        src: url("{{ 'Fontspring-DEMO-proximanova-thin' | asset_url }}") format("woff2");
+      }
+      body {
         font-family: 'Proxima nova bold';
       }
       :root {
