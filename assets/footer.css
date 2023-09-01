@@ -15,8 +15,8 @@
 }
 
 #footer #footer-navigation .footer-menu-item {
-    display: inline-block; /* Display them inline-block */
-    margin-right: 20px; /* Add some spacing between them */
+    display: inline-block; 
+    margin-right: 20px; 
 }
 
 
@@ -25,5 +25,9 @@
 
   .footer-icons .twitter-icon {
     margin-right: -50px;
+}
+
+.footer-icons .instagram-icon {
+    margin-left: -10px; 
 }
 
