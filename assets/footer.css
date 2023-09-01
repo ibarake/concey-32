@@ -1,5 +1,7 @@
 #footer {
   padding: 40px 100px 40px 100px;
+  background-color: var(--main-gray);
+  transform: scaleY(0);
 }
 
 .footer-icons {
