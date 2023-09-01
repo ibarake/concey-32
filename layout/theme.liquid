@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% section 'custom-fonts' %}
     <style>
-            @font-face {
-        font-family: "Font name";
-        src: url("{{ '[font-file-name]' | asset_url }}") format("[font-format]");
+      @font-face {
+        font-family: "Proxima nova bold";
+        src: url("{{ 'Fontspring-DEMO-proximanova-bold' | asset_url }}") format("[font-format]");
       }
-            :root {
-              --main-gray: #f3f3f3;
-              --second-gray: #818181;
-            }
+      @font-face {
+        font-family: "Proxima nova medium";
+        src: url("{{ 'Fontspring-DEMO-proximanova-medium' | asset_url }}") format("[font-format]");
+      }
+      @font-face {
+        font-family: "Proxima nova regular";
+        src: url("{{ 'Fontspring-DEMO-proximanova-regular' | asset_url }}") format("[font-format]");
+      }
+      @font-face {
+        font-family: "Proxima nova thin";
+        src: url("{{ 'Fontspring-DEMO-proximanova-thin' | asset_url }}") format("[font-format]");
+      }
+      :root {
+        --main-gray: #f3f3f3;
+        --second-gray: #818181;
+      }
     </style>
     {{ 'header.css' | asset_url | stylesheet_tag }}
     {{ 'footer.css' | asset_url | stylesheet_tag }}
