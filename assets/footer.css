@@ -22,7 +22,7 @@
   transform: scale(0.3); 
 }
 
-#footer #footer-navigation {
+#footer #footer-navigation a{
   text-align: center;
   font-family: "Proxima nova regular";
   text-transform: uppercase;
