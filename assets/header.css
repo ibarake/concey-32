@@ -46,5 +46,6 @@ header nav li a{
   font-family: "Proxima nova regular";
     text-transform: uppercase;
   text-decoration: none;
+  color: var(--main-black);
 }
 
