@@ -12,6 +12,7 @@
 .footer-icons .facebook-icon,
 .footer-icons .twitter-icon,
 .footer-icons .instagram-icon {
+    border: 2px solid #000;
     padding: -5px;
     margin: 5px 5px 0 0; 
     transform: scale(0.3); 
