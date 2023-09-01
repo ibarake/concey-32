@@ -12,6 +12,7 @@
 .footer-icons .twitter-icon,
 .footer-icons .instagram-icon {
     transform: scale(0.3); 
+    padding: 5;
     
 }
 
@@ -23,4 +24,3 @@
 
 #footer #footer-navigation .footer-menu-item:last-child {
     margin-right: 0;
-
