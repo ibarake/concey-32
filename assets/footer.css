@@ -1,6 +1,5 @@
 #footer {
   padding: 40px 100px 40px 100px;
-  
 }
 
 .footer-icons {
@@ -24,9 +23,12 @@
 }
 
 #footer #footer-navigation {
-    text-align: center;
+  text-align: center;
+  font-family: "Proxima nova regular";
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--main-black);
 }
-
 
 #footer #footer-navigation .footer-menu-item {
     display: inline-block; 
