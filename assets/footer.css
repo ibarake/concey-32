@@ -7,3 +7,9 @@
   justify-content: flex-end;
 }
 
+.footer-icons .facebook-icon,
+.footer-icons .twitter-icon,
+.footer-icons .instagram-icon {
+    transform: scale(0.5); /* 0.5 means 50% of the original size */
+}
+
