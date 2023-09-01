@@ -12,7 +12,7 @@
 .footer-icons .facebook-icon,
 .footer-icons .twitter-icon,
 .footer-icons .instagram-icon {
-    margin: 0 0 0 0; 
+    margin: scale(0.3); 
     transform: scale(0.3); 
 }
 
