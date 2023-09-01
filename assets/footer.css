@@ -42,7 +42,7 @@
 
 #footer #footer-navigation .footer-menu-item {
     display: inline-block; 
-    margin: 0 0px; 
+    margin: 0 35px 0 -35; 
 }
 
 #footer #footer-navigation .footer-menu-item:last-child {
