@@ -23,9 +23,14 @@
   transform: scale(0.3); 
 }
 
+#footer #footer-navigation {
+    text-align: center;
+}
+
+
 #footer #footer-navigation .footer-menu-item {
     display: inline-block; 
-    margin: 0; 
+    margin: 0 35px; 
 }
 
 #footer #footer-navigation .footer-menu-item:last-child {
