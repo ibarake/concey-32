@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% section 'custom-fonts' %}
     <style>
-      :root {
-        --main-gray: #f3f3f3;
-        --second-gray: #818181;
+            @font-face {
+        font-family: "Font name";
+        src: url("{{ '[font-file-name]' | asset_url }}") format("[font-format]");
       }
+            :root {
+              --main-gray: #f3f3f3;
+              --second-gray: #818181;
+            }
     </style>
     {{ 'header.css' | asset_url | stylesheet_tag }}
     {{ 'footer.css' | asset_url | stylesheet_tag }}
