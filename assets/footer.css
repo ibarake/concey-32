@@ -28,6 +28,10 @@
   transform: scale(0.3); 
 }
 
+#footer-navigation {
+  text-align: center;
+}
+
 #footer #footer-navigation a{
   text-align: center;
   font-family: "Proxima nova regular";
