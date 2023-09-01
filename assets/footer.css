@@ -22,5 +22,8 @@
 
 #footer #footer-navigation .footer-menu-item:last-child {
     margin-right: 0;
+
+  .footer-icons .twitter-icon {
+    margin-right: -10px;
 }
 
