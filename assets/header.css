@@ -26,12 +26,8 @@
 }
 
 header nav{
-  font-family: "Proxima nova regular";
   background-color: var(--main-gray);
   transform: scaleY(0);
-  text-transform: uppercase;
-  text-decoration: none;
-  color:
 }
 
 header nav ul{
@@ -44,5 +40,11 @@ header nav ul{
 }
 header nav li{
   padding: 20px 35px;
+}
+
+header nav li a{
+  font-family: "Proxima nova regular";
+    text-transform: uppercase;
+  text-decoration: none;
 }
 
