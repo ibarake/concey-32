@@ -9,7 +9,9 @@
 }
 
 
-.footer-icons .facebook-icon,
+.footer-icons .facebook-icon {
+  margin: 0px 0px 0px 0px;
+}
 .footer-icons .twitter-icon,
 .footer-icons .instagram-icon {
     border: 2px ;
