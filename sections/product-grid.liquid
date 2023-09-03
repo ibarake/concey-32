@@ -5,7 +5,8 @@
 </head>
 <section class="parallax">
   <div class="parallax-inner">
-    {{ images['potions-header.png'] | image_url: width:300 | image_tag }}
+    <img src="{{ 'home-2015-07-31-leather-model-01-0092-v3-FINAL.jpg' | asset_url }}">
+
   </div>
 </section>
 
@@ -17,6 +18,8 @@
     const scrolled = window.scrollY;
     parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
   });
+
+
 </script>
 </product-grid>
 
