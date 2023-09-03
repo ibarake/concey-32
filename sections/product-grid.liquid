@@ -17,6 +17,12 @@
   window.addEventListener('scroll', function() {
     const parallax = document.querySelector('.img-parallax');
     const scrolled = window.scrollY;
+    const pageHeight = document.body.clientHeight;
+    const threshold = 0.9;
+    const fadeStart = pageHeight * threshold;
+    let opacity = 1 - (scrollPosition / fadeStart);
+    opacity = Math.min(1, Math.max(0, opacity));
+    document.getElementById('fading-image').style.opacity = opacity;
     parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
   });
 
