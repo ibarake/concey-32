@@ -32,6 +32,8 @@
     const scrolled = window.scrollY;
     parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
   });
+  $('.slick-prev-c').onclick(() => {$('.slick-carousel').slick('slickPrev')});
+  $('.slick-next-c').onclick(() => {$('.slick-carousel').slick('slickNext')});
 
 </script>
 </product-grid>
