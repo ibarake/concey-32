@@ -34,12 +34,16 @@
 }
 
 .section-title {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "proxima-nova";
     text-transform: capitalize;
     letter-spacing: .04em;
     font-weight: 300;
     font-style: normal;
     color: #000;
-    margin: 0;
 }
 
 .slick-buttons {
@@ -56,4 +60,19 @@
     cursor: pointer;
     margin-left: 10px;
     z-index: 1;
+}
+
+product-title{
+    margin: 0 0 2px 0;
+    text-align: center;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "proxima-nova";
+    text-transform: capitalize;
+    letter-spacing: .04em;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
 }
