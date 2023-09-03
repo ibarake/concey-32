@@ -18,13 +18,15 @@
         </div>
     </div>
     <div class="slick-carousel">
-        <div class="product">Producto 1</div>
-        <div class="product">Producto 2</div>
-        <div class="product">Producto 3</div>
+        {% for product in collections['featured'].products %}
+        <div class="product">
+            <img src="{{ product.images.first.src | img_url: 'large' }}" alt="{{ product.title }}">
+            <h3>{{ product.title }}</h3>
+        </div>
+        {% endfor %}
     </div>
 </div>
 
-  
 </section>
 
 
