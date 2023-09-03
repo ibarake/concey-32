@@ -30,15 +30,16 @@
       }
     </style>
     {{ 'header.css' | asset_url | stylesheet_tag }}
-    {{ 'footer.css' | asset_url | stylesheet_tag }}
     {{ 'product-grid.css' | asset_url | stylesheet_tag }}
+    {{ 'footer.css' | asset_url | stylesheet_tag }}
     <title>CONCEY 32</title>
     {{ content_for_header }}
   </head>
   <body>
     {% section 'header' %}
     {{ content_for_layout }}
-    {% section 'footer' %}
     {% section 'product-grid' %}
+    {% section 'footer' %}
+
   </body>
 </html>
