@@ -47,7 +47,7 @@
     justify-content: flex-end;
     float: right;
     width: 50px;
-    z-index: 1;
+    
 }
 
 .slick-buttons button {
@@ -55,4 +55,5 @@
     border: none;
     cursor: pointer;
     margin-left: 10px;
+    z-index: 1;
 }
