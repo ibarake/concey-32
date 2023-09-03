@@ -1,6 +1,5 @@
 <product-grid> 
 <head>
-  <h1>PRODUCT GRID</h1>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="product-grid.css">
 </head>
@@ -15,7 +14,7 @@
 
 <script>
   window.addEventListener('scroll', function() {
-    const parallax = document.querySelector('.parallax');
+    const parallax = document.querySelector('.img-parallax');
     const scrolled = window.scrollY;
     parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
   });
