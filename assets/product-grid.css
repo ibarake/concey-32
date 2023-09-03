@@ -1,0 +1,18 @@
+.parallax {
+    background-image: url('tu-imagen-parallax.jpg'); /* Ruta de tu imagen de fondo */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Color de texto para hacerlo visible en la imagen de fondo */
+  }
+  
+  .parallax-inner {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+  }
+  
