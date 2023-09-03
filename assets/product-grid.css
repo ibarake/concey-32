@@ -27,3 +27,31 @@
     pointer-events: none; 
     z-index: 1;
 }
+
+.product-section {
+    box-sizing: border-box;
+    font-family: "proxima-nova";
+}
+
+.section-title {
+    text-transform: capitalize;
+    letter-spacing: .04em;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
+    margin: 0;
+}
+
+.slick-buttons {
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    width: 50px;
+}
+
+.slick-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}

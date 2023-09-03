@@ -6,9 +6,25 @@
 <section class="parallax">
   <div class="parallax-inner">
     <img src="https://images.squarespace-cdn.com/content/v1/56c34abb8259b52c41717077/1455914155783-BIEX5ZDYCW3W3KTNHKYD/home-2015-07-31-leather-model-01-0092-v3-FINAL.jpg?format=2500w.jpg" class="img-parallax" alt="">
-    <div class="white-gradient"></div>
+<div class="white-gradient"></div>
     </div>
   </div>
+  <div class="product-section">
+    <div class="product-header">
+        <h2 class="section-title">Featured Items</h2>
+        <div class="slick-buttons">
+            <button class="slick-prev">Slick Prev</button>
+            <button class="slick-next">Slick Next</button>
+        </div>
+    </div>
+    <div class="slick-carousel">
+        <div class="product">Producto 1</div>
+        <div class="product">Producto 2</div>
+        <div class="product">Producto 3</div>
+    </div>
+</div>
+
+  
 </section>
 
 
@@ -17,14 +33,17 @@
   window.addEventListener('scroll', function() {
     const parallax = document.querySelector('.img-parallax');
     const scrolled = window.scrollY;
-    const pageHeight = document.body.clientHeight;
-    const threshold = 0.9;
-    const fadeStart = pageHeight * threshold;
-    let opacity = 1 - (scrollPosition / fadeStart);
-    opacity = Math.min(1, Math.max(0, opacity));
-    document.getElementById('fading-image').style.opacity = opacity;
     parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
   });
+  $(document).ready(function() {
+    $('.slick-carousel').slick();
+    $('.slick-prev').click(function() {
+        $('.slick-carousel').slick('slickPrev');
+    });
+    $('.slick-next').click(function() {
+        $('.slick-carousel').slick('slickNext');
+    });
+});
 
 
 </script>
