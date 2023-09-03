@@ -1,8 +1,9 @@
-.parallax-inner{
-    font-size: 0px;
+.parallax-inner {
+    font-size: 0;
+    left: 0;
+    top: 0; 
+    height: 100vh;
     position: relative;
-    left: -35.6681px; 
-    top: 0px;
-    width: 840.336px;
-    height: 560px;
+    background-size: cover;
+    background-position: center;
 }
