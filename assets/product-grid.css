@@ -70,9 +70,8 @@ product-title{
 .imagen-estilizada {
     display: block;
     object-fit: cover;
-    width: 80%; 
-    max-height: 80vh; 
-    margin: 10px auto;
+    width: 85%; 
+    margin: 100px auto;
     object-position: 50% 70%;
 }
 
