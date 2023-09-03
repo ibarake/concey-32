@@ -3,11 +3,13 @@
     "9d9a7c38-aabc-47e3-90ae-a8ff76c42195": {
       "type": "main-banner",
       "settings": {
+        "footer_linklist_title": "None"
       }
     },
     "c1ecc6d6-be3d-4752-b587-1602268028a6": {
       "type": "product-grid",
       "settings": {
+        "collection": "gigi"
       }
     }
   },
