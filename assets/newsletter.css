@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.newsletter-section {
+    margin-left: 118px;
+}
+
+.title-newsletter {
+    color: #1A1A1A;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 1.333px;
+}
+
+.content-newsletter{
+    color: #595959;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.313px;
+}
+
+.newsletter-form{
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+.newsletter-form label {
+    color: #595959;
+font-family: Lato;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0.313px;
+}
+
+.newsletter-form input[type="email"] {
+    width: 360px;
+    flex-shrink: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    background: rgba(217, 217, 217, 0.15);
+    
+}
