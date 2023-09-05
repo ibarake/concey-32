@@ -1,77 +1,115 @@
 <contact>
-    <div class="contact-container">
-        <h1>{{  }}</h1>
-        <p>{{   }}</p>
-        <div class="info-card">
-            <img src="{{ 'phone-icon.svg' | asset_url }}" alt="Phone Icon" />
-            <h2>{{  }}</h2>
-            <p>{{  }}</p>
+    <div class="contact-section">
+        <h2 class="contact-title">Contact Us</h2>
+        <p class="contact-description">Have questions or need assistance? Feel free to reach out to us:</p>
+
+        <!-- Card 1 -->
+        <div class="contact-card">
+            <div class="card-icon">
+                <img src="{{ section.settings.card1_icon | asset_url }}" alt="Card 1 Icon">
+            </div>
+            <h3 class="card-title">{{ section.settings.card1_title }}</h3>
+            <p class="card-description">{{ section.settings.card1_description }}</p>
         </div>
-        <div class="info-card">
-            <img src="{{ 'email-icon.svg' | asset_url }}" alt="Email Icon" />
-            <h2>Email</h2>
-            <p>info@example.com</p>
+
+        <!-- Card 2 -->
+        <div class="contact-card">
+            <div class="card-icon">
+                <img src="{{ section.settings.card2_icon | asset_url }}" alt="Card 2 Icon">
+            </div>
+            <h3 class="card-title">{{ section.settings.card2_title }}</h3>
+            <p class="card-description">{{ section.settings.card2_description }}</p>
         </div>
-        <div class="info-card">
-            <img src="{{ 'location-icon.svg' | asset_url }}" alt="Location Icon" />
-            <h2>Location</h2>
-            <p>123 Main Street, City, Country</p>
+
+        <!-- Card 3 -->
+        <div class="contact-card">
+            <div class="card-icon">
+                <img src="{{ section.settings.card3_icon | asset_url }}" alt="Card 3 Icon">
+            </div>
+            <h3 class="card-title">{{ section.settings.card3_title }}</h3>
+            <p class="card-description">{{ section.settings.card3_description }}</p>
         </div>
     </div>
-</contact>
 
 {% schema %}
+{
+    "name": "contact",
+    "settings": [
     {
-        "name": "contact",
-        "settings": [
-        {
-            "type": "text",
-            "label": "Title",
-            "id": "title",
-            "default": "CONTACT US"
-        },
-        {
-            "type": "textarea",
-            "label": "Introduction Paragraph",
-            "id": "intro_paragraph",
-            "default": "Feel free to get in touch with us for any inquiries:"
-        },
-        {
-            "type": "group",
-            "label": "Information Cards",
-            "id": "info_cards",
-            "info": "Add information cards for phone number, email, and location.",
-            "max_blocks": 3,
-            "settings": [
-            {
-                "type": "image_picker",
-                "label": "Icon",
-                "id": "icon",
-                "default": "phone-icon.svg"
-            },
-            {
-                "type": "text",
-                "label": "Card Title",
-                "id": "card_title",
-                "default": "Phone Number"
-            },
-            {
-                "type": "text",
-                "label": "Card Text",
-                "id": "card_text",
-                "default": "+1 (123) 456-7890"
-            }
-            ]
-        }
-        ],
-        "presets": [
-        {
-            "name": "Default",
-            "category": "Custom"
-        }
-        ]
+        "type": "text",
+        "label": "Contact Title",
+        "id": "contact_title",
+        "default": "Contact Us"
+    },
+    {
+        "type": "textarea",
+        "label": "Contact Description",
+        "id": "contact_description",
+        "default": "Have questions or need assistance? Feel free to reach out to us:"
+    },
+    {
+        "type": "text",
+        "label": "Card 1 Title",
+        "id": "card1_title",
+        "default": "Card 1 Title"
+    },
+    {
+        "type": "image_picker",
+        "label": "Card 1 Icon",
+        "id": "card1_icon",
+        "default": "card1-icon.svg"
+    },
+    {
+        "type": "textarea",
+        "label": "Card 1 Description",
+        "id": "card1_description",
+        "default": "Card 1 Description"
+    },
+    {
+        "type": "text",
+        "label": "Card 2 Title",
+        "id": "card2_title",
+        "default": "Card 2 Title"
+    },
+    {
+        "type": "image_picker",
+        "label": "Card 2 Icon",
+        "id": "card2_icon",
+        "default": "card2-icon.svg"
+    },
+    {
+        "type": "textarea",
+        "label": "Card 2 Description",
+        "id": "card2_description",
+        "default": "Card 2 Description"
+    },
+    {
+        "type": "text",
+        "label": "Card 3 Title",
+        "id": "card3_title",
+        "default": "Card 3 Title"
+    },
+    {
+        "type": "image_picker",
+        "label": "Card 3 Icon",
+        "id": "card3_icon",
+        "default": "card3-icon.svg"
+    },
+    {
+        "type": "textarea",
+        "label": "Card 3 Description",
+        "id": "card3_description",
+        "default": "Card 3 Description"
     }
-    {% endschema %}
+    ],
+    "presets": [
+    {
+        "name": "Default",
+        "category": "Custom"
+    }
+]
+}
+{% endschema %}
 
 {% stylesheet %}
 {% endstylesheet %}
