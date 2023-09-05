@@ -1,8 +1,37 @@
+<about>
+  <div class="about-container">
+    <div class="about-image">
+      {% render 'about-me-img' %}
+    </div>
+    <h2 class="about-title"></h2>
+    <p class="about-text"></p>
+  </div>
+</about>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "about",
+    "settings": [
+    {
+        "type": "text",
+        "label": "About Title",
+        "id": "about-title",
+        "default": "About Me"
+    },
+    {
+        "type": "textarea",
+        "label": "About Text",
+        "id": "about_text",
+        "default": "As a child, I would listen to my grandfather share stories about his life as a handbag designer in New York and the company he launched in 1932, Concey’s of Fifth Avenue. At his studio perched on the 11th floor of 724 Fifth Avenue, he handcrafted each Concey handbag with the finest leathers and fabrics. His stories transported me, back in time to the glamour of New York, his bags gracing the shelves at Saks Fifth Avenue and Bergdorf Goodman."
+    }
+    ],
+    "presets": [
+    {
+        "name": "Default",
+        "category": "Custom"
+    }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
