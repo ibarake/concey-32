@@ -1,8 +1,111 @@
+<contact>
+    <div class="contact-section">
+        <h2 class="contact-title">Contact Us</h2>
+        <p class="contact-description">Have questions or need assistance? Feel free to reach out to us:</p>
+
+        <!-- Card 1 -->
+        <div class="contact-card">
+            <div class="card-icon">
+                <img src="{{ section.settings.card1_icon | asset_url }}" alt="Card 1 Icon">
+            </div>
+            <h3 class="card-title">{{ section.settings.card1_title }}</h3>
+            <p class="card-description">{{ section.settings.card1_description }}</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="contact-card">
+            <div class="card-icon">
+                <img src="{{ section.settings.card2_icon | asset_url }}" alt="Card 2 Icon">
+            </div>
+            <h3 class="card-title">{{ section.settings.card2_title }}</h3>
+            <p class="card-description">{{ section.settings.card2_description }}</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="contact-card">
+            <div class="card-icon">
+                <img src="{{ section.settings.card3_icon | asset_url }}" alt="Card 3 Icon">
+            </div>
+            <h3 class="card-title">{{ section.settings.card3_title }}</h3>
+            <p class="card-description">{{ section.settings.card3_description }}</p>
+        </div>
+    </div>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "contact",
+    "settings": [
+    {
+        "type": "text",
+        "label": "Contact Title",
+        "id": "contact_title",
+        "default": "Contact Us"
+    },
+    {
+        "type": "textarea",
+        "label": "Contact Description",
+        "id": "contact_description",
+        "default": "Have questions or need assistance? Feel free to reach out to us:"
+    },
+    {
+        "type": "text",
+        "label": "Card 1 Title",
+        "id": "card1_title",
+        "default": "Card 1 Title"
+    },
+    {
+        "type": "image_picker",
+        "label": "Card 1 Icon",
+        "id": "card1_icon"
+    },
+    {
+        "type": "textarea",
+        "label": "Card 1 Description",
+        "id": "card1_description",
+        "default": "Card 1 Description"
+    },
+    {
+        "type": "text",
+        "label": "Card 2 Title",
+        "id": "card2_title",
+        "default": "Card 2 Title"
+    },
+    {
+        "type": "image_picker",
+        "label": "Card 2 Icon",
+        "id": "card2_icon"
+    },
+    {
+        "type": "textarea",
+        "label": "Card 2 Description",
+        "id": "card2_description",
+        "default": "Card 2 Description"
+    },
+    {
+        "type": "text",
+        "label": "Card 3 Title",
+        "id": "card3_title",
+        "default": "Card 3 Title"
+    },
+    {
+        "type": "image_picker",
+        "label": "Card 3 Icon",
+        "id": "card3_icon"
+    },
+    {
+        "type": "textarea",
+        "label": "Card 3 Description",
+        "id": "card3_description",
+        "default": "Card 3 Description"
+    }
+    ],
+    "presets": [
+    {
+        "name": "Default",
+        "category": "Custom"
+    }
+]
+}
 {% endschema %}
 
 {% stylesheet %}
