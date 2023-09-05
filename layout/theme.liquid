@@ -41,6 +41,9 @@
     {{ 'header.css' | asset_url | stylesheet_tag }}
     {{ 'product-grid.css' | asset_url | stylesheet_tag }}
     {{ 'footer.css' | asset_url | stylesheet_tag }}
+    {{ 'about.css' | asset_url | stylesheet_tag }}
+    {{ 'contact.css' | asset_url | stylesheet_tag }}
+    {{ 'newsletter.css' | asset_url | stylesheet_tag }}
     <title>CONCEY 32</title>
     {{ content_for_header }}
   </head>
@@ -48,9 +51,14 @@
     {% section 'header' %}
     {{ content_for_layout }}
     {% section 'footer' %}
+    {% section 'about' %}
+    {% section 'contact' %}
+    {% section 'newsletter' %}
+    {% section 'footer' %}
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
       $('.slick-carousel').slick({infinite: true, slidesToShow: 3, slidesToScroll: 3, arrows: false});
     </script>
+    
   </body>
 </html>

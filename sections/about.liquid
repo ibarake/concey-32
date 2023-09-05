@@ -1,1 +1,47 @@
-<h1>ABOUT US</h1>
+<about>
+    <div class="about-container">
+        <div class="about-image">
+            <img src="{{  }}" />
+        </div>
+        <h2 class="about-title">{{  }}</h2>
+        <p class="about-text">{{  }}</p>
+    </div>
+</about>
+
+{% schema %}
+    {
+        "name": "about",
+        "settings": [
+        {
+            "type": "image_picker",
+            "label": "About Image",
+            "id": "about_image",
+            "default": "placeholder-image.jpg"
+        },
+        {
+            "type": "text",
+            "label": "About Title",
+            "id": "about_title",
+            "default": "About Us"
+        },
+        {
+            "type": "textarea",
+            "label": "About Text",
+            "id": "about_text",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+        ],
+        "presets": [
+        {
+            "name": "Default",
+            "category": "Custom"
+        }
+        ]
+    }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

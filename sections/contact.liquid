@@ -1,1 +1,80 @@
-<h1>CONTACT US</h1>
+<contact>
+    <div class="contact-container">
+        <h1>{{  }}</h1>
+        <p>{{   }}</p>
+        <div class="info-card">
+            <img src="{{ 'phone-icon.svg' | asset_url }}" alt="Phone Icon" />
+            <h2>{{  }}</h2>
+            <p>{{  }}</p>
+        </div>
+        <div class="info-card">
+            <img src="{{ 'email-icon.svg' | asset_url }}" alt="Email Icon" />
+            <h2>Email</h2>
+            <p>info@example.com</p>
+        </div>
+        <div class="info-card">
+            <img src="{{ 'location-icon.svg' | asset_url }}" alt="Location Icon" />
+            <h2>Location</h2>
+            <p>123 Main Street, City, Country</p>
+        </div>
+    </div>
+</contact>
+
+{% schema %}
+    {
+        "name": "contact",
+        "settings": [
+        {
+            "type": "text",
+            "label": "Title",
+            "id": "title",
+            "default": "CONTACT US"
+        },
+        {
+            "type": "textarea",
+            "label": "Introduction Paragraph",
+            "id": "intro_paragraph",
+            "default": "Feel free to get in touch with us for any inquiries:"
+        },
+        {
+            "type": "group",
+            "label": "Information Cards",
+            "id": "info_cards",
+            "info": "Add information cards for phone number, email, and location.",
+            "max_blocks": 3,
+            "settings": [
+            {
+                "type": "image_picker",
+                "label": "Icon",
+                "id": "icon",
+                "default": "phone-icon.svg"
+            },
+            {
+                "type": "text",
+                "label": "Card Title",
+                "id": "card_title",
+                "default": "Phone Number"
+            },
+            {
+                "type": "text",
+                "label": "Card Text",
+                "id": "card_text",
+                "default": "+1 (123) 456-7890"
+            }
+            ]
+        }
+        ],
+        "presets": [
+        {
+            "name": "Default",
+            "category": "Custom"
+        }
+        ]
+    }
+    {% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
