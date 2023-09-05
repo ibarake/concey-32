@@ -1,14 +1,15 @@
 <contact>
     <div class="contact-section">
         <h2 class="contact-title">Contact Us</h2>
-        <p class="contact-description">Contact us if you have any special request or require support in the purchasing process.</p>
+        <p class="contact-paragraph">Contact us if you have any special request or require support in the purchasing process.</p>
 
         <!-- Card 1 -->
+        <div class="box">
         <div class="contact-card">
             <div class="card-icon">
                 {% render 'phone-icon' %}
             </div>
-            <h3 class="card-title">{{ section.settings.card1_title }}</h3>
+            <h3 class="contant-box-title">{{ section.settings.card1_title }}</h3>
             <p class="card-description">{{ section.settings.card1_description }}</p>
         </div>
 
@@ -17,7 +18,7 @@
             <div class="card-icon">
                 {% render 'email-icon' %}
             </div>
-            <h3 class="card-title">{{ section.settings.card2_title }}</h3>
+            <h3 class="contant-box-title">{{ section.settings.card2_title }}</h3>
             <p class="card-description">{{ section.settings.card2_description }}</p>
         </div>
 
@@ -26,8 +27,9 @@
             <div class="card-icon">
                 {% render 'location-icon' %}
             </div>
-            <h3 class="card-title">{{ section.settings.card3_title }}</h3>
+            <h3 class="contant-box-title">{{ section.settings.card3_title }}</h3>
             <p class="card-description">{{ section.settings.card3_description }}</p>
+        </div>
         </div>
     </div>
 

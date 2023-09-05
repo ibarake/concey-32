@@ -1,17 +1,17 @@
 .about-container {
     display: flex;
     align-items: center; 
-  }
-  
-  .about-image {
+}
+
+.about-image {
     
     margin-left: 106.1px;
     width: 391.624px;
     height: 496px;
     flex-shrink: 0;
-  }
-  
-  .btn{
+}
+
+.btn{
     margin-left: 106.27px;
     margin-bottom: 33px;
     width: 137px;
@@ -19,7 +19,7 @@
     flex-shrink: 0;
     border-radius: 24px;
     border: 2px solid #E0DEDD;
-  }
+}
 
   .btn span{
     color: #595959;
@@ -42,8 +42,8 @@
     line-height: 14px;
     letter-spacing: 0.25px;
   } */
-
-  .about-text{
+  
+.about-text{
     
     margin-left: 112.27px;
     margin-right: 91px;
@@ -54,5 +54,4 @@
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 0.313px;
-  }
-  
+}
