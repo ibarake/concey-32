@@ -1,7 +1,19 @@
 <newsletter>
     <div class="newsletter-section">
-    <h2>{{  }}</h2>
-    <p>{{  }}</p>
+        <cont-1>
+            <h1 class="title-newsletter">
+                {{ page.title }}
+            </h1>
+        </cont-1>
+        <cont-2 class="content-newsletter">
+            <p>
+                {{ page.content }}
+            </p>
+        </cont-2>
+
+        <h2>{{ }}</h2>
+        <p>{{ }}</p>
+
         <form action="/subscribe" method="post" class="newsletter-form">
             <label for="newsletter-email">Email:</label>
             <input type="email" id="newsletter-email" name="email" required>
@@ -12,27 +24,27 @@
 
 {% schema %}
 {
-    "name": "newsletter",
-    "settings": [
-    {
-        "type": "text",
-        "label": "Newsletter Title",
-        "id": "newsletter_title",
-        "default": "Subscribe to Our Newsletter"
-    },
-    {
-        "type": "textarea",
-        "label": "Newsletter Description",
-        "id": "newsletter_description",
-        "default": "Sign up to receive our latest updates and promotions."
-    }
-    ],
-    "presets": [
-    {
-    "name": "Default",
-    "category": "Custom"
-    }
-    ]
+"name": "newsletter",
+"settings": [
+{
+"type": "text",
+"label": "Newsletter Title",
+"id": "newsletter_title",
+"default": "Subscribe to Our Newsletter"
+},
+{
+"type": "textarea",
+"label": "Newsletter Description",
+"id": "newsletter_description",
+"default": "Sign up to receive our latest updates and promotions."
+}
+],
+"presets": [
+{
+"name": "Default",
+"category": "Custom"
+}
+]
 }
 {% endschema %}
 
