@@ -23,6 +23,12 @@
     
 }
 
+.contact-box {
+  display: flex;
+  flex-direction : row;
+  padding: 3vh;
+}
+
 .box{
     margin-top: 76.17px;
     margin-left: 149px;
