@@ -29,23 +29,23 @@
           "03c2ddcb-8dfc-41b1-9cc3-5a9ed5d3f445": {
             "type": "contact_card",
             "settings": {
-              "card1_title": "Phone number",
-              "card1_icon": "shopify:\/\/shop_images\/Group_4.png",
-              "card1_description": "Leverage agile frameworks to provide a robust synopsis."
+              "card_title": "Phone number",
+              "card_icon": "shopify:\/\/shop_images\/Group_4.png",
+              "card_description": "Leverage agile frameworks to provide a robust synopsis."
             }
           },
           "ea304137-c400-4cb2-a834-de4c445c75df": {
             "type": "contact_card",
             "settings": {
-              "card1_title": "Phone number",
-              "card1_description": "Leverage agile frameworks to provide a robust synopsis."
+              "card_title": "Phone number",
+              "card_description": "Leverage agile frameworks to provide a robust synopsis."
             }
           },
           "c1242e65-179a-49ec-90ef-fb74d8979bad": {
             "type": "contact_card",
             "settings": {
-              "card1_title": "Phone number",
-              "card1_description": "Leverage agile frameworks to provide a robust synopsis."
+              "card_title": "Phone number",
+              "card_description": "Leverage agile frameworks to provide a robust synopsis."
             }
           }
         },
