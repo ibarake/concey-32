@@ -2,7 +2,7 @@
     margin-top: 78.59px;
     margin-left: 117.37px;
     color: #1A1A1A;
-    font-family: Montserrat;
+    font-family: var(--global-font-lato);
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -14,7 +14,7 @@
     margin-top: 21.13px;
     margin-left: 117.37px;
     color: #595959;
-    font-family: Lato;
+    font-family: var(--global-font-lato);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -48,7 +48,7 @@
 .contact-box-title {
     margin-top: 30.12px;
     color: #464655;
-    font-family: Lato;
+    font-family: var(--global-font-lato);
     font-size: 20px;
     font-style: normal;
     font-weight: 900;
@@ -59,7 +59,7 @@
     margin-top: 17px;
     color: #595959;
     text-align: center;
-    font-family: Lato;
+    font-family: var(--global-font-lato);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
