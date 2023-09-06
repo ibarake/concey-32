@@ -14,6 +14,33 @@
         "settings": {
           "footer-menu": "footer-1"
         }
+      },
+      "about": {
+        "type": "about",
+        "settings": {
+          "about_title": "About Me",
+          "about_text": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+      },
+      "contact": {
+        "type": "contact",
+        "settings": {
+          "contact_title": "Contact Us",
+          "contact_description": "Have questions or need assistance? Feel free to reach out to us:",
+          "card1_title": "Phone number",
+          "card1_description": "Leverage agile frameworks to provide a robust synopsis.",
+          "card2_title": "Email",
+          "card2_description": "Leverage agile frameworks to provide a robust synopsis.",
+          "card3_title": "Location",
+          "card3_description": "Leverage agile frameworks to provide a robust synopsis."
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "newsletter_title": "Subscribe to Our Newsletter",
+          "newsletter_description": "Sign up to receive our latest updates and promotions."
+        }
       }
     },
     "content_for_index": [
