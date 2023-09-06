@@ -23,7 +23,7 @@
 
   .btn span{
     color: #595959;
-    font-family: Lato;
+    font-family: var(--global-font-lato);
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -48,7 +48,7 @@
     margin-left: 112.27px;
     margin-right: 91px;
     color: #595959;
-    font-family: Lato;
+    font-family: var(--global-font-lato);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
