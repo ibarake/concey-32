@@ -24,15 +24,37 @@
       },
       "contact": {
         "type": "contact",
+        "blocks": {
+          "03c2ddcb-8dfc-41b1-9cc3-5a9ed5d3f445": {
+            "type": "contact_card",
+            "settings": {
+              "card1_title": "Phone number",
+              "card1_description": "Leverage agile frameworks to provide a robust synopsis."
+            }
+          },
+          "ea304137-c400-4cb2-a834-de4c445c75df": {
+            "type": "contact_card",
+            "settings": {
+              "card1_title": "Phone number",
+              "card1_description": "Leverage agile frameworks to provide a robust synopsis."
+            }
+          },
+          "c1242e65-179a-49ec-90ef-fb74d8979bad": {
+            "type": "contact_card",
+            "settings": {
+              "card1_title": "Phone number",
+              "card1_description": "Leverage agile frameworks to provide a robust synopsis."
+            }
+          }
+        },
+        "block_order": [
+          "03c2ddcb-8dfc-41b1-9cc3-5a9ed5d3f445",
+          "ea304137-c400-4cb2-a834-de4c445c75df",
+          "c1242e65-179a-49ec-90ef-fb74d8979bad"
+        ],
         "settings": {
           "contact_title": "Contact Us",
-          "contact_description": "Have questions or need assistance? Feel free to reach out to us:",
-          "card1_title": "Phone number",
-          "card1_description": "Leverage agile frameworks to provide a robust synopsis.",
-          "card2_title": "Email",
-          "card2_description": "Leverage agile frameworks to provide a robust synopsis.",
-          "card3_title": "Location",
-          "card3_description": "Leverage agile frameworks to provide a robust synopsis."
+          "contact_description": "Have questions or need assistance? Feel free to reach out to us:"
         }
       },
       "newsletter": {
