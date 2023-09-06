@@ -2,7 +2,6 @@
     <div class="contact-section">
         <h2 class="contact-title">Contact Us</h2>
         <p class="contact-paragraph">Contact us if you have any special request or require support in the purchasing process.</p>
-
         <!-- Card 1 -->
         <div class="box">
         <div class="contact-card">
@@ -11,25 +10,7 @@
             </div>
             <h3 class="contant-box-title">{{ section.settings.card1_title }}</h3>
             <p class="card-description">{{ section.settings.card1_description }}</p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="contact-card">
-            <div class="card-icon">
-                {% render 'email-icon' %}
-            </div>
-            <h3 class="contant-box-title">{{ section.settings.card2_title }}</h3>
-            <p class="card-description">{{ section.settings.card2_description }}</p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="contact-card">
-            <div class="card-icon">
-                {% render 'location-icon' %}
-            </div>
-            <h3 class="contant-box-title">{{ section.settings.card3_title }}</h3>
-            <p class="card-description">{{ section.settings.card3_description }}</p>
-        </div>
+          </div>
         </div>
     </div>
 
@@ -48,59 +29,31 @@
         "label": "Contact Description",
         "id": "contact_description",
         "default": "Have questions or need assistance? Feel free to reach out to us:"
-    },
-    {
-        "type": "text",
-        "label": "Card 1 Title",
-        "id": "card1_title",
-        "default": "Phone number"
-    },
-    {
-        "type": "image_picker",
-        "label": "Card 1 Icon",
-        "id": "card1_icon"
-    },
-    {
-        "type": "textarea",
-        "label": "Card 1 Description",
-        "id": "card1_description",
-        "default": "Leverage agile frameworks to provide a robust synopsis."
-    },
-    {
-        "type": "text",
-        "label": "Card 2 Title",
-        "id": "card2_title",
-        "default": "Email"
-    },
-    {
-        "type": "image_picker",
-        "label": "Card 2 Icon",
-        "id": "card2_icon"
-    },
-    {
-        "type": "textarea",
-        "label": "Card 2 Description",
-        "id": "card2_description",
-        "default": "Leverage agile frameworks to provide a robust synopsis."
-    },
-    {
-        "type": "text",
-        "label": "Card 3 Title",
-        "id": "card3_title",
-        "default": "Location"
-    },
-    {
-        "type": "image_picker",
-        "label": "Card 3 Icon",
-        "id": "card3_icon"
-    },
-    {
-        "type": "textarea",
-        "label": "Card 3 Description",
-        "id": "card3_description",
-        "default": "Leverage agile frameworks to provide a robust synopsis."
     }
     ],
+    "blocks": [{
+      "type": "contact_card",
+      "name": "contact card",
+      "settings": [
+        {
+            "type": "text",
+            "label": "Card 1 Title",
+            "id": "card1_title",
+            "default": "Phone number"
+        },
+        {
+            "type": "image_picker",
+            "label": "Card 1 Icon",
+            "id": "card1_icon"
+        },
+        {
+            "type": "textarea",
+            "label": "Card 1 Description",
+            "id": "card1_description",
+            "default": "Leverage agile frameworks to provide a robust synopsis."
+        }
+      ]
+    }],
     "presets": [
     {
         "name": "Default",
