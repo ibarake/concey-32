@@ -1,7 +1,7 @@
 <about>
   <div class="about-container">
     <div class="about-image">
-      {{ section.settings.about_image }}
+      {{ section.settings.about_image | image_url: width: 392 | image_tag: alt: section.settings.about_image.alt }}
     </div>
     <div class="about-content">
       <button class="btn"><span>About me</span></button>
