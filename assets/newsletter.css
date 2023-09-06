@@ -4,7 +4,7 @@
 
 .title-newsletter {
     color: #1A1A1A;
-    font-family: Montserrat;
+    font-family: var(--global-font-lato);
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -14,7 +14,7 @@
 
 .content-newsletter{
     color: #595959;
-    font-family: Lato;
+    font-family: var(--global-font-lato);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -32,7 +32,7 @@
 
 .newsletter-form label {
 color: #595959;
-font-family: Lato;
+font-family: var(--global-font-lato);
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
