@@ -7,10 +7,10 @@
       <div class="box">
         <div class="contact-card">
           <div class="card-icon">
-            {{ block.settings.card1_icon | image_url: width: 32 | image_tag: alt: block.settings.card1_icon.alt }}
+            {{ block.settings.card_icon | image_url: width: 32 | image_tag: alt: block.settings.card_icon.alt }}
           </div>
-          <h3 class="contant-box-title">{{ block.settings.card1_title }}</h3>
-          <p class="card-description">{{ block.settings.card1_description }}</p>
+          <h3 class="contant-box-title">{{ block.settings.card_title }}</h3>
+          <p class="card-description">{{ block.settings.card_description }}</p>
         </div>
       </div>
     {% endfor %}
@@ -41,19 +41,19 @@
       "settings": [
         {
             "type": "text",
-            "label": "Card 1 Title",
-            "id": "card1_title",
+            "label": "Card Title",
+            "id": "card_title",
             "default": "Phone number"
         },
         {
             "type": "image_picker",
-            "label": "Card 1 Icon",
-            "id": "card1_icon"
+            "label": "Card Icon",
+            "id": "card_icon"
         },
         {
             "type": "textarea",
             "label": "Card 1 Description",
-            "id": "card1_description",
+            "id": "card_description",
             "default": "Leverage agile frameworks to provide a robust synopsis."
         }
       ]
