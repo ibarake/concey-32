@@ -23,7 +23,7 @@
     
 }
 
-.contact-box {
+.block-conainer {
   display: flex;
   flex-direction : row;
   padding: 3vh;
