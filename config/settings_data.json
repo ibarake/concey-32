@@ -29,6 +29,7 @@
             "type": "contact_card",
             "settings": {
               "card1_title": "Phone number",
+              "card1_icon": "shopify:\/\/shop_images\/Group_4.png",
               "card1_description": "Leverage agile frameworks to provide a robust synopsis."
             }
           },
