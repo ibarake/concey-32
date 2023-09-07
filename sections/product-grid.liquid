@@ -1,7 +1,9 @@
 <product-grid>
   <section class="parallax">
     <div class="parallax-inner">
-      {{ section.settings['parallax-inner'] }}
+      <div class="parallax-image">
+        {{ section.settings['parallax-image'] }}
+      </div>
       <!--
         <img src="https://images.squarespace-cdn.com/content/v1/56c34abb8259b52c41717077/1455914155783-BIEX5ZDYCW3W3KTNHKYD/home-2015-07-31-leather-model-01-0092-v3-FINAL.jpg?format=2500w.jpg" class="img-parallax" alt="">
       -->
@@ -43,6 +45,7 @@
     
     
     
+    
   window.addEventListener('scroll', function() {
     const parallax = document.querySelector('.img-parallax');
     const scrolled = window.scrollY;
@@ -50,6 +53,7 @@
   });
   $('.slick-prev-c').on('click', () => {$('.slick-carousel').slick('slickPrev')}); 
   $('.slick-next-c').on('click', () => {$('.slick-carousel').slick('slickNext')}); 
+
 
 
 
@@ -68,9 +72,9 @@
   "label": "Collection"
 },
 {
-    "type": "image_picker",
-    "id": "parallax-inner",
-    "label": "parallax image"
+  "type": "image_picker",
+  "id": "parallax-image",
+  "label": "parallax image"
 }
 ],
   "presets" : [{ "name" : "product grid" }]
