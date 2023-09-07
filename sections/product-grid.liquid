@@ -2,7 +2,7 @@
   <section class="parallax">
     <div class="parallax-inner">
       <img
-        src="{{ section.settings.parallax-image | image_url }}"
+        src="{{ section.settings.parallax-image | image_url | image_tag: alt: section.settings.parallax-image.alt }}"
         class="img-parallax"
       >
       <div class="parallax-image">
