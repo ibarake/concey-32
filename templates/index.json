@@ -9,7 +9,8 @@
     "c1ecc6d6-be3d-4752-b587-1602268028a6": {
       "type": "product-grid",
       "settings": {
-        "collection": "gigi"
+        "collection": "gigi",
+        "parallax-image": "shopify:\/\/shop_images\/MaxwellScottMaterialsMachinesTools-12-of-16-e1555411550660.jpg"
       }
     }
   },
