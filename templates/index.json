@@ -9,7 +9,8 @@
     "c1ecc6d6-be3d-4752-b587-1602268028a6": {
       "type": "product-grid",
       "settings": {
-        "collection": "gigi"
+        "collection": "gigi",
+        "parallax-inner": "shopify:\/\/shop_images\/home-2015-07-31-leather-model-01-0092-v3-FINAL.jpg"
       }
     }
   },
