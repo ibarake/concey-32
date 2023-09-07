@@ -2,7 +2,7 @@
   <section class="parallax">
     <div class="parallax-inner">
       <img
-        src="{{ section.settings.parallax-image }}"
+        src="{{ section.settings.parallax-image | image_url }}"
         class="img-parallax"
         alt="parallax image"
         width="500"
@@ -44,6 +44,7 @@
   </section>
 
   <script>
+    
        
   window.addEventListener('scroll', function() {
     const parallax = document.querySelector('.img-parallax');
@@ -52,6 +53,7 @@
   });
   $('.slick-prev-c').on('click', () => {$('.slick-carousel').slick('slickPrev')}); 
   $('.slick-next-c').on('click', () => {$('.slick-carousel').slick('slickNext')}); 
+
 
   </script>
 </product-grid>
