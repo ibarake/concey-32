@@ -1,50 +1,44 @@
 <product-grid>
-  <section class="parallax">
-    <div class="parallax-inner">
-      <img
-        src="{{ section.settings.parallax-image | image_url }}"
-        class="img-parallax"
-      >
-      <div class="parallax-image">
-        {% # {{ # section.settings['parallax-image'] }} %}
+  {% if section.settings['parallax-image'] != blank %}
+    <section class="parallax">
+      <div class="parallax-inner">
+        <img
+          src="{{ section.settings.parallax-image | image_url }}"
+          class="img-parallax"
+        >
+        <div class="white-gradient"></div>
       </div>
-
-      <div class="white-gradient"></div>
-    </div>
-    <div class="product-section">
-      <div class="product-header">
-        <h2 class="section-title">Featured Items</h2>
-        <div class="slick-buttons">
-          <button class="slick-prev-c" onclick="() => $('.slick-carousel').slick('slickPrev')">
-            {% render 'arrow-left-icon' %}
-          </button>
-          <button class="slick-next-c" onclick="() => $('.slick-carousel').slick('slickNext')">
-            {% render 'arrow-right-icon' %}
-          </button>
+      <div class="product-section">
+        <div class="product-header">
+          <h2 class="section-title">Featured Items</h2>
+          <div class="slick-buttons">
+            <button class="slick-prev-c" onclick="() => $('.slick-carousel').slick('slickPrev')">
+              {% render 'arrow-left-icon' %}
+            </button>
+            <button class="slick-next-c" onclick="() => $('.slick-carousel').slick('slickNext')">
+              {% render 'arrow-right-icon' %}
+            </button>
+          </div>
+        </div>
+        <div class="slick-carousel">
+          {% for product in section.settings.collection.products %}
+            <div class="product">
+              <img src="{{ product.images.first.src | img_url: 'large' }}" alt="{{ product.title }}">
+              <product-title>{{ product.title }}</product-title>
+            </div>
+          {% endfor %}
+        </div>
+        <div>
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/56c34abb8259b52c41717077/1455914196367-MR8SQP43YG89USPW4KTF/product-collage.jpg?format=1500w.jpg"
+            class="imagen-estilizada"
+          >
         </div>
       </div>
-      <div class="slick-carousel">
-        {% for product in section.settings.collection.products %}
-          <div class="product">
-            <img src="{{ product.images.first.src | img_url: 'large' }}" alt="{{ product.title }}">
-            <product-title>{{ product.title }}</product-title>
-          </div>
-        {% endfor %}
-      </div>
-      <div>
-        <img
-          src="https://images.squarespace-cdn.com/content/v1/56c34abb8259b52c41717077/1455914196367-MR8SQP43YG89USPW4KTF/product-collage.jpg?format=1500w.jpg"
-          class="imagen-estilizada"
-        >
-      </div>
-    </div>
-  </section>
+    </section>
+  {% endif %}
 
   <script>
-    
-    
-    
-    
        
   window.addEventListener('scroll', function() {
     const parallax = document.querySelector('.img-parallax');
@@ -53,10 +47,6 @@
   });
   $('.slick-prev-c').on('click', () => {$('.slick-carousel').slick('slickPrev')}); 
   $('.slick-next-c').on('click', () => {$('.slick-carousel').slick('slickNext')}); 
-
-
-
-
 
   </script>
 </product-grid>
@@ -78,9 +68,3 @@
   "presets" : [{ "name" : "product grid" }]
 }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
