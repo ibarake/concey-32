@@ -6,8 +6,10 @@
     <div class="site-logo">
       {{ settings.logo | img_url | img_tag: 'logo', settings.logo.alt, '500x500' }}
     </div>
+
     <div class="nav-icon cart-drawer-toggle">
       <button class="cart-btn" href="/cart">{% render 'cart-icon' %}</button>
+      <button class="cart-btn" href="/cart">{% render 'add-to-cart-icon' %}</button>
     </div>
   </div>
   <nav>
