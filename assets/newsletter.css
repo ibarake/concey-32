@@ -49,3 +49,14 @@ letter-spacing: 0.313px;
     background: rgba(217, 217, 217, 0.15);
     
 }
+
+.button-sub{
+    color: #595959;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.313px;
+    border-radius: 16px;
+}
