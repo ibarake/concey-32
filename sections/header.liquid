@@ -4,7 +4,7 @@
       {% render 'nav-icon' %}
     </div>
     <div class="site-logo">
-      {{ settings.logo | img_url | img_tag: 'logo', settings.logo.alt, '500x500' }}
+      {{ settings.logo | image_url: width: '500px' | image_tag }}
     </div>
 
     <div class="nav-icon cart-drawer-toggle">
