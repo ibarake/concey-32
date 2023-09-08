@@ -31,6 +31,10 @@
   box-sizing: border-box;
   font-family: "proxima-nova";
 }
+/* ------------------- */
+.product-header {
+  display: inline;
+}
 
 .section-title {
   margin-left: 106.1px;
@@ -88,4 +92,8 @@ line-height: normal;
 
 .slick-carousel{
   margin-left: 106.1px;
+}
+
+.add-to-cart-btn{
+
 }
