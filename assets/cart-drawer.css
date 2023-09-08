@@ -68,8 +68,10 @@
 
 .cart-drawer-header-right-close {
   width: 20px;
-  color: #a1a1a1;
   cursor: pointer;
+  border: none;
+  background-color: snow;
+  margin-left: 144px;
 }
 
 .cart-drawer-header-right-close:hover {
