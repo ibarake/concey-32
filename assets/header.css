@@ -48,3 +48,8 @@ header nav li a{
   text-decoration: none;
   color: var(--main-black);
 }
+
+.site-logo{
+    width: 122px;
+    height: 36px;
+}
