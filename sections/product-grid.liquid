@@ -25,8 +25,9 @@
             <div class="product">
               <img src="{{ product.images.first.src | img_url: 'large' }}" alt="{{ product.title }}">
               <div class="product-footer">
-                <h4>{{ product.collections[1].title }}</h4>
-                <h3>{{ product.title }}</h3>
+                <h4 class="product-collection">{{ product.collections[1].title }}</h4>
+                <h3 class="product-title">{{ product.title }}</h3>
+                <p class="price">{{ product.price }}</p>
               </div>
             </div>
           {% endfor %}
@@ -42,6 +43,7 @@
   {% endif %}
 
   <script>
+    
        
   window.addEventListener('scroll', function() {
     const parallax = document.querySelector('.img-parallax');
@@ -50,6 +52,7 @@
   });
   $('.slick-prev-c').on('click', () => {$('.slick-carousel').slick('slickPrev')}); 
   $('.slick-next-c').on('click', () => {$('.slick-carousel').slick('slickNext')}); 
+
 
   </script>
 </product-grid>
