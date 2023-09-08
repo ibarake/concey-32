@@ -7,7 +7,7 @@
       <div class="cart-drawer-header-right">
         <span class="cart-drawer-header-right-items">{{ cart.item_count }} items</span>
         <button class="cart-drawer-header-right-close" type="button">
-          {% render 'x.svg' %}
+          {% render 'close-icon' %}
         </button>
       </div>
     </header>
@@ -36,7 +36,8 @@
                       <input
                         type="text"
                         readonly
-                        value="{{ item.quantity }}">
+                        value="{{ item.quantity }}"
+                      >
                       <button class="cart-drawer-quantity-selector-plus" type="button">{% render 'plus.svg' %}</button>
                     </div>
                   </div>
@@ -63,7 +64,10 @@
           <button
             type="submit"
             name="checkout"
-            class="cart-drawer-button">Checkout</button>
+            class="cart-drawer-button"
+          >
+            Checkout
+          </button>
         </footer>
       {% endif %}
     {% endform %}
@@ -71,126 +75,126 @@
 </div>
 
 <script>
-  function openCartDrawer() {
-    document.querySelector(".cart-drawer").classList.add("cart-drawer--active");
-  }
+    function openCartDrawer() {
+      document.querySelector(".cart-drawer").classList.add("cart-drawer--active");
+    }
 
-  function closeCartDrawer() {
-    document.querySelector(".cart-drawer").classList.remove("cart-drawer--active");
-  }
+    function closeCartDrawer() {
+      document.querySelector(".cart-drawer").classList.remove("cart-drawer--active");
+    }
 
-  function updateCartItemCounts(count) {
-    document.querySelectorAll(".cart-count").forEach((el) => {
-      el.textContent = count;
-    });
-  }
+    function updateCartItemCounts(count) {
+      document.querySelectorAll(".cart-count").forEach((el) => {
+        el.textContent = count;
+      });
+    }
 
-  async function updateCartDrawer() {
-    const res = await fetch("/?section_id=cart-drawer");
-    const text = await res.text();
-    const html = document.createElement("div");
-    html.innerHTML = text;
+    async function updateCartDrawer() {
+      const res = await fetch("/?section_id=cart-drawer");
+      const text = await res.text();
+      const html = document.createElement("div");
+      html.innerHTML = text;
 
-    const newBox = html.querySelector(".cart-drawer").innerHTML;
+      const newBox = html.querySelector(".cart-drawer").innerHTML;
 
-    document.querySelector(".cart-drawer").innerHTML = newBox;
+      document.querySelector(".cart-drawer").innerHTML = newBox;
+
+      addCartDrawerListeners();
+    }
+
+    function addCartDrawerListeners() {
+
+  // Update quantities
+      document.querySelectorAll(".cart-drawer-quantity-selector button").forEach((button) => {
+        button.addEventListener("click", async () => {
+
+  // Get line item key
+          const rootItem = button
+            .parentElement
+            .parentElement
+            .parentElement
+            .parentElement
+            .parentElement;
+          const key = rootItem.getAttribute("data-line-item-key");
+
+  // Get new quantity
+          const currentQuantity = Number(button.parentElement.querySelector("input").value);
+          const isUp = button.classList.contains("cart-drawer-quantity-selector-plus");
+          const newQuantity = isUp
+            ? currentQuantity + 1
+            : currentQuantity - 1;
+
+  // Ajax update\
+          const res = await fetch("/cart/update.js", {
+            method: "post",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(
+              {
+                updates: {
+                  [key]: newQuantity
+                }
+              }
+            )
+          });
+          const cart = await res.json();
+
+          updateCartItemCounts(cart.item_count);
+
+  // Update cart
+          updateCartDrawer();
+        });
+      });
+
+      document.querySelector(".cart-drawer-box").addEventListener("click", (e) => {
+        e.stopPropagation();
+      });
+
+      document.querySelectorAll(".cart-drawer-header-right-close, .cart-drawer").forEach((el) => {
+        el.addEventListener("click", () => {
+          console.log("closing drawer");
+          closeCartDrawer();
+        });
+      });
+    }
 
     addCartDrawerListeners();
-  }
 
-  function addCartDrawerListeners() {
+    document.querySelectorAll('form[action="/cart/add"]').forEach((form) => {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
 
-// Update quantities
-    document.querySelectorAll(".cart-drawer-quantity-selector button").forEach((button) => {
-      button.addEventListener("click", async () => {
-
-// Get line item key
-        const rootItem = button
-          .parentElement
-          .parentElement
-          .parentElement
-          .parentElement
-          .parentElement;
-        const key = rootItem.getAttribute("data-line-item-key");
-
-// Get new quantity
-        const currentQuantity = Number(button.parentElement.querySelector("input").value);
-        const isUp = button.classList.contains("cart-drawer-quantity-selector-plus");
-        const newQuantity = isUp
-          ? currentQuantity + 1
-          : currentQuantity - 1;
-
-// Ajax update\
-        const res = await fetch("/cart/update.js", {
+  // Submit form with ajax
+        await fetch("/cart/add", {
           method: "post",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(
-            {
-              updates: {
-                [key]: newQuantity
-              }
-            }
-          )
+          body: new FormData(form)
         });
-        const cart = await res.json();
 
+  // Get cart count
+        const res = await fetch("/cart.js");
+        const cart = await res.json();
         updateCartItemCounts(cart.item_count);
 
-// Update cart
-        updateCartDrawer();
+  // Update cart
+        await updateCartDrawer();
+
+  // Open cart drawer
+        openCartDrawer();
       });
     });
 
-    document.querySelector(".cart-drawer-box").addEventListener("click", (e) => {
-      e.stopPropagation();
-    });
-
-    document.querySelectorAll(".cart-drawer-header-right-close, .cart-drawer").forEach((el) => {
-      el.addEventListener("click", () => {
-        console.log("closing drawer");
-        closeCartDrawer();
+    document.querySelectorAll('a[href="/cart"]').forEach((a) => {
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        openCartDrawer();
       });
     });
-  }
-
-  addCartDrawerListeners();
-
-  document.querySelectorAll('form[action="/cart/add"]').forEach((form) => {
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-
-// Submit form with ajax
-      await fetch("/cart/add", {
-        method: "post",
-        body: new FormData(form)
-      });
-
-// Get cart count
-      const res = await fetch("/cart.js");
-      const cart = await res.json();
-      updateCartItemCounts(cart.item_count);
-
-// Update cart
-      await updateCartDrawer();
-
-// Open cart drawer
-      openCartDrawer();
-    });
-  });
-
-  document.querySelectorAll('a[href="/cart"]').forEach((a) => {
-    a.addEventListener("click", (e) => {
-      e.preventDefault();
-      openCartDrawer();
-    });
-  });
 </script>
 
 {% schema %}
-  {
-    "name": "Cart drawer"
-  }
+{
+  "name": "Cart drawer"
+}
 {% endschema %}
