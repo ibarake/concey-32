@@ -26,7 +26,8 @@
 .block-conainer {
   display: flex;
   flex-direction : row;
-  padding: 3vh;
+  /* padding: 3vh; */
+  margin-left: 149px;
 }
 
 .box{
