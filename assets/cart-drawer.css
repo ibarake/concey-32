@@ -141,10 +141,15 @@
 }
 
 .cart-drawer-item-main-flex-left span {
-  color: #a1a1a1;
-  font-size: 13px;
-  margin-top: 4px;
-  display: block;
+    margin-top: 4px;
+    display: block;
+    margin-right: 129px;
+    color: #9E9E9E;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .cart-drawer-item-main-flex-right span {
