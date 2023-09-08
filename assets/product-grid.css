@@ -69,6 +69,15 @@
   line-height: normal;
 }
 
+.price{
+  color: #000;
+  font-family: Proxima Nova;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+}
+
 .imagen-estilizada{
   display: block;
   object-fit: cover;
