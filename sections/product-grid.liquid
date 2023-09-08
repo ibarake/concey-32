@@ -2,8 +2,6 @@
   {% if section.settings['parallax-image'] != blank %}
     <section class="parallax">
       <div class="parallax-inner">
-        <h1 class="parallax-text">CONCEY32</h1>
-        <h1 class="parallax-text2">THE STORY CONTINUES</h1>
         <img
           src="{{ section.settings.parallax-image | image_url }}"
           class="img-parallax"
@@ -30,14 +28,15 @@
                 <h4 class="product-collection">{{ product.collections[1].title }}</h4>
                 <h3 class="product-title">{{ product.title }}</h3>
                 <p class="price">{{ product.price }}</p>
+                <button class="add-to-cart-btn" href="/cart">{% render 'add-to-cart-icon' %}</button>
               </div>
             </div>
           {% endfor %}
         </div>
         <div>
           <img
-            src="{{ section.settings.stilized-image | image_url }}"
-            class="stilized-image"
+            src="https://images.squarespace-cdn.com/content/v1/56c34abb8259b52c41717077/1455914196367-MR8SQP43YG89USPW4KTF/product-collage.jpg?format=1500w.jpg"
+            class="imagen-estilizada"
           >
         </div>
       </div>
@@ -45,6 +44,10 @@
   {% endif %}
 
   <script>
+    
+    
+    
+    
        
   window.addEventListener('scroll', function() {
     const parallax = document.querySelector('.img-parallax');
@@ -53,15 +56,6 @@
   });
   $('.slick-prev-c').on('click', () => {$('.slick-carousel').slick('slickPrev')}); 
   $('.slick-next-c').on('click', () => {$('.slick-carousel').slick('slickNext')}); 
-
-
-
-
-
-
-
-
-
 
 
 
@@ -82,11 +76,6 @@
   "type": "image_picker",
   "id": "parallax-image",
   "label": "parallax image"
-},
-{
-  "type": "image_picker",
-  "id": "stilized-image",
-  "label": "stilized image"
 }
 ],
   "presets" : [{ "name" : "product grid" }]
