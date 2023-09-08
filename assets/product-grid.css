@@ -33,7 +33,7 @@
 }
 /* ------------------- */
 .product-header {
-  display: inline;
+  display: flex;
 }
 
 .section-title {
