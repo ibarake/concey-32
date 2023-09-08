@@ -62,7 +62,7 @@
 }
 
 .cart-drawer-header-right-items {
-  display: block;
+  display: none;
   font-weight: 500;
 }
 
