@@ -10,35 +10,6 @@
         >
         <div class="white-gradient"></div>
       </div>
-      <style>
-          .parallax-inner {
-          position: relative;
-          text-align: center;
-        }
-
-        .parallax-text,
-        .parallax-text2 {
-          font-family: Monserrat, sans-serif;
-          font-weight: 700;
-          font-size: 40px;
-          line-height: 14px;
-          color: white;
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-
-        .parallax-text {
-          left: 0;
-          right: 50%;
-        }
-
-        .parallax-text2 {
-          left: 50%;
-          right: 0;
-        }
-              }
-      </style>
       <div class="product-section">
         <div class="product-header">
           <h2 class="section-title">Featured Items</h2>
@@ -85,6 +56,7 @@
     
     
     
+    
        
   window.addEventListener('scroll', function() {
     const parallax = document.querySelector('.img-parallax');
@@ -93,6 +65,7 @@
   });
   $('.slick-prev-c').on('click', () => {$('.slick-carousel').slick('slickPrev')}); 
   $('.slick-next-c').on('click', () => {$('.slick-carousel').slick('slickNext')}); 
+
 
 
 
