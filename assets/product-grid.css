@@ -96,6 +96,8 @@ line-height: normal;
   margin-left: 106.1px;
 }
 
-.add-to-cart-btn{
-
+.price-cart{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
 }
