@@ -33,13 +33,15 @@
 }
 
 .section-title {
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  letter-spacing: 0.04em;
-  font-weight: 300;
+  margin-left: 106.1px;
+  color: #595959;
+  font-family: Montserrat;
+  font-size: 28px;
   font-style: normal;
-  margin-left: 20px;
+  font-weight: 600;
+  line-height: 48px; /* 171.429% */
+  letter-spacing: 1.333px;
+
 }
 
 .slick-buttons {
