@@ -101,3 +101,8 @@ line-height: normal;
     justify-content: space-between;
     margin-right: 100px;
 }
+
+.add-to-cart-btn{
+  border: none;
+  background-color: snow;
+}
