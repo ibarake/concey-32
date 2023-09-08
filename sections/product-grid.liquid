@@ -2,7 +2,15 @@
   {% if section.settings['parallax-image'] != blank %}
     <section class="parallax">
       <div class="parallax-inner">
+<<<<<<< HEAD
         <img src="{{ section.settings.parallax-image | image_url }}" class="img-parallax">
+=======
+        <img
+          src="{{ section.settings.parallax-image | image_url }}"
+          class="img-parallax"
+        >
+        <h1>CONCEY32</h1>
+>>>>>>> 76ffe3f5091945e88c91ce6f3adcc78d6eced72f
         <div class="white-gradient"></div>
       </div>
       <div class="product-section">
@@ -37,6 +45,7 @@
   {% endif %}
 
   <script>
+<<<<<<< HEAD
     window.addEventListener('scroll', function() {
       const parallax = document.querySelector('.img-parallax');
       const scrolled = window.scrollY;
@@ -50,6 +59,29 @@
     $('.slick-next-c').on('click', () => {
       $('.slick-carousel').slick('slickNext')
     });
+=======
+    
+    
+    
+    
+    
+    
+       
+  window.addEventListener('scroll', function() {
+    const parallax = document.querySelector('.img-parallax');
+    const scrolled = window.scrollY;
+    parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
+  });
+  $('.slick-prev-c').on('click', () => {$('.slick-carousel').slick('slickPrev')}); 
+  $('.slick-next-c').on('click', () => {$('.slick-carousel').slick('slickNext')}); 
+
+
+
+
+
+
+
+>>>>>>> 76ffe3f5091945e88c91ce6f3adcc78d6eced72f
   </script>
 </product-grid>
 
