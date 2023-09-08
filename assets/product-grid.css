@@ -67,7 +67,7 @@ product-title {
   font-style: normal;
 }
 
-.imagen-estilizada {
+.stilized-image{
   display: block;
   object-fit: cover;
   width: 85%;
