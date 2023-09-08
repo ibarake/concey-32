@@ -46,10 +46,12 @@
 }
 
 .cart-drawer-header h2 {
-  color: #212529;
-  flex: 1;
-  font-weight: 500;
-  font-size: 18px;
+  color: #000;
+  font-family: Arial;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 16px; /* 50% */
 }
 
 .cart-drawer-header-right {
