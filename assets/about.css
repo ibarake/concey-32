@@ -30,7 +30,6 @@
   }
 
 .about-text{
-    
     margin-left: 112.27px;
     margin-right: 91px;
     color: #595959;
@@ -40,4 +39,9 @@
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 0.313px;
+}
+
+.about-img{
+  width: 525.329px;
+  height: 388.174px;
 }
