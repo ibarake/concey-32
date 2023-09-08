@@ -2,12 +2,43 @@
   {% if section.settings['parallax-image'] != blank %}
     <section class="parallax">
       <div class="parallax-inner">
+        <h1 class="parallax-text">CONCEY32</h1>
+        <h1 class="parallax-text2">THE STORY CONTINUES</h1>
         <img
           src="{{ section.settings.parallax-image | image_url }}"
           class="img-parallax"
         >
         <div class="white-gradient"></div>
       </div>
+      <style>
+          .parallax-inner {
+          position: relative;
+          text-align: center;
+        }
+
+        .parallax-text,
+        .parallax-text2 {
+          font-family: Monserrat, sans-serif;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 14px;
+          color: white;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        .parallax-text {
+          left: 0;
+          right: 50%;
+        }
+
+        .parallax-text2 {
+          left: 50%;
+          right: 0;
+        }
+              }
+      </style>
       <div class="product-section">
         <div class="product-header">
           <h2 class="section-title">Featured Items</h2>
@@ -28,15 +59,14 @@
                 <h4 class="product-collection">{{ product.collections[1].title }}</h4>
                 <h3 class="product-title">{{ product.title }}</h3>
                 <p class="price">{{ product.price }}</p>
-                <button class="add-to-cart-btn" href="/cart"></button>
               </div>
             </div>
           {% endfor %}
         </div>
         <div>
           <img
-            src="https://images.squarespace-cdn.com/content/v1/56c34abb8259b52c41717077/1455914196367-MR8SQP43YG89USPW4KTF/product-collage.jpg?format=1500w.jpg"
-            class="imagen-estilizada"
+            src="{{ section.settings.stilized-image | image_url }}"
+            class="stilized-image"
           >
         </div>
       </div>
@@ -44,6 +74,14 @@
   {% endif %}
 
   <script>
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -55,6 +93,14 @@
   });
   $('.slick-prev-c').on('click', () => {$('.slick-carousel').slick('slickPrev')}); 
   $('.slick-next-c').on('click', () => {$('.slick-carousel').slick('slickNext')}); 
+
+
+
+
+
+
+
+
 
 
 
@@ -74,6 +120,11 @@
   "type": "image_picker",
   "id": "parallax-image",
   "label": "parallax image"
+},
+{
+  "type": "image_picker",
+  "id": "stilized-image",
+  "label": "stilized image"
 }
 ],
   "presets" : [{ "name" : "product grid" }]
