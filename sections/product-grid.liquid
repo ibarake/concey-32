@@ -2,7 +2,8 @@
   {% if section.settings['parallax-image'] != blank %}
     <section class="parallax">
       <div class="parallax-inner">
-        <h1 class="parallax-text">HOLA</h1>
+        <h1 class="parallax-text">CONCEY32</h1>
+        <h1 class="parallax-text2">THE STORY CONTINUES</h1>
         <img
           src="{{ section.settings.parallax-image | image_url }}"
           class="img-parallax"
@@ -50,6 +51,7 @@
     
     
     
+    
        
   window.addEventListener('scroll', function() {
     const parallax = document.querySelector('.img-parallax');
@@ -58,6 +60,7 @@
   });
   $('.slick-prev-c').on('click', () => {$('.slick-carousel').slick('slickPrev')}); 
   $('.slick-next-c').on('click', () => {$('.slick-carousel').slick('slickNext')}); 
+
 
 
 
