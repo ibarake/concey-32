@@ -131,7 +131,13 @@
 }
 
 .cart-drawer-item-main-flex-left h3 a {
-  color: #212529;
+    color: #000;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: normal;
+    text-decoration: none;
 }
 
 .cart-drawer-item-main-flex-left span {
