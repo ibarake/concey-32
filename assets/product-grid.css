@@ -31,9 +31,11 @@
   box-sizing: border-box;
   font-family: "proxima-nova";
 }
-/* ------------------- */
+
+
 .product-header {
   display: flex;
+  justify-content: space-between;
 }
 
 .section-title {
