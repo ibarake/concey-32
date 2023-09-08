@@ -32,6 +32,9 @@
                   </div>
                 </div>
                 <div class="cart-dou">
+                  <div class="cart-drawer-item-main-flex-right">
+                    <span>{{ item.final_line_price | money }}</span>
+                  </div>
                   <div class="cart-drawer-quantity-selector">
                     <button class="cart-drawer-quantity-selector-minus" type="button">
                       {% render 'minus-icon' %}
@@ -41,9 +44,6 @@
                       readonly
                       value="{{ item.quantity }}">
                     <button class="cart-drawer-quantity-selector-plus" type="button">{% render 'plus-icon' %}</button>
-                  </div>
-                  <div class="cart-drawer-item-main-flex-right">
-                    <span>{{ item.final_line_price | money }}</span>
                   </div>
                 </div>
               </div>

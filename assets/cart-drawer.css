@@ -231,3 +231,8 @@ line-height: normal;
   margin: auto;
   color: #212529;
 }
+
+.cart-duo{
+  display: flex;
+  justify-content: space-between;
+}
