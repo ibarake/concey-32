@@ -24,14 +24,16 @@
               <div class="product-footer">
                 <h4 class="product-collection">{{ product.collections[1].title }}</h4>
                 <h3 class="product-title">{{ product.title }}</h3>
-                <p class="price">{{ product.price }}</p>
-                <form action="/cart/add" method="post">
-                  <input
-                    type="hidden"
-                    name="id"
-                    value="{{ product.variants.first.id }}">
-                  <button type="submit" class="add-to-cart-btn">{% render 'add-to-cart-icon' %}</button>
-                </form>
+                <div class="price-cart">
+                  <p class="price">{{ product.price }}</p>
+                  <form action="/cart/add" method="post">
+                    <input
+                      type="hidden"
+                      name="id"
+                      value="{{ product.variants.first.id }}">
+                    <button type="submit" class="add-to-cart-btn">{% render 'add-to-cart-icon' %}</button>
+                  </form>
+                </div>
               </div>
             </div>
           {% endfor %}
