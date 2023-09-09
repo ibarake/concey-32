@@ -179,7 +179,7 @@ border: 1px solid #9E9E9E;
   user-select: none;
   border: none; 
   background-color: #e7e7e7;
-  border-radius: 50%; 
+  border-start-end-radius-radius: 50%; 
 }
 
 .cart-drawer-quantity-selector input {
