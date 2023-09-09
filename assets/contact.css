@@ -26,11 +26,9 @@
 .block-conainer {
   display: flex;
   flex-direction : row;
-  /* padding: 3vh; */
   margin-left: 180px;
-  justify-content: center; /* Horizontally center the cards */
-  align-items: center; /* Vertically center the cards */
-  height: 50vh; /* Optional: Set a height to center vertically within the viewport */
+  justify-content: center; 
+  height: 50vh;
 }
 
 .box{
