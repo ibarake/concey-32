@@ -182,7 +182,7 @@
     border: none; 
     background-color: #9E9E9E;
     border-radius: 50%; 
-    margin-right: -10px;
+    margin: -10px;
 }
 
 .cart-drawer-quantity-selector input {
