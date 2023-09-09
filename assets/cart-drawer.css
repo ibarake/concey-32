@@ -161,7 +161,7 @@ line-height: normal;
 border-radius: 8px;
 border: 1px solid #9E9E9E;
 }
-
+/* Increment Decrement buttons */
 .cart-drawer-quantity-selector {
   display: inline-flex;
   border: 1px solid #e7e7e7;
@@ -177,6 +177,7 @@ border: 1px solid #9E9E9E;
   justify-content: center;
   cursor: pointer;
   user-select: none;
+  color: #9E9E9E;
 }
 
 .cart-drawer-quantity-selector input {
@@ -187,6 +188,7 @@ border: 1px solid #9E9E9E;
   border-left: 1px solid #e7e7e7;
   border-right: 1px solid #e7e7e7;
 }
+/* ---------------------------------------- */
 
 .cart-drawer-footer {
   padding: 24px;
