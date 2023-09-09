@@ -165,7 +165,8 @@ border: 1px solid #9E9E9E;
 .cart-drawer-quantity-selector {
   display: inline-flex;
   border: 1px solid #e7e7e7;
-  border-radius: 16px; /* Increase border-radius to create a pill shape */
+  border-radius: 16px;
+  background-color: #e7e7e7; 
   margin-top: 10px;
 }
 
@@ -178,7 +179,6 @@ border: 1px solid #9E9E9E;
   cursor: pointer;
   user-select: none;
   border: none; 
-  background-color: #e7e7e7; 
   background-color: #e7e7e7; 
   border-radius: 50%; 
 }
