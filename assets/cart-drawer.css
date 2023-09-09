@@ -171,7 +171,8 @@
     background-color: #9E9E9E;
 }
 
-.cart-drawer-quantity-selector button {
+.cart-drawer-quantity-selector .cart-drawer-quantity-selector-plus,
+.cart-drawer-quantity-selector .cart-drawer-quantity-selector-minus {
     width: 24px; 
     height: 24px;
     display: flex;
@@ -182,7 +183,10 @@
     border: none; 
     background-color: #9E9E9E;
     border-radius: 50%; 
-    margin: -10px;
+    margin-right: -5px; 
+
+.cart-drawer-quantity-selector-plus {
+    
 }
 
 .cart-drawer-quantity-selector input {
