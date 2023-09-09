@@ -27,29 +27,6 @@
   z-index: 1;
 }
 
-.text-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  text-align: center;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-  pointer-events: none; 
-}
-
-.white-text {
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 20px;
-  border-radius: 10px;
-  z-index: 1; 
-}
-
-.hide-text .text-container {
-  opacity: 0;
-}
-
 .product-section {
   box-sizing: border-box;
   font-family: "proxima-nova";
