@@ -164,36 +164,38 @@ border: 1px solid #9E9E9E;
 /* Increment Decrement buttons */
 .cart-drawer-quantity-selector {
   display: inline-flex;
+  width: 65px;
+  height: 29px;
   border: 1px solid #9E9E9E;
-  border-radius: 16px; 
+  border-radius: 16px;
   margin-top: 10px;
   background-color: #9E9E9E;
 }
 
 .cart-drawer-quantity-selector button {
-  width: 24px; 
-  height: 24px;
+  width: 29px;
+  height: 29px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   user-select: none;
-  border: none; 
+  border: none;
   background-color: #9E9E9E;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
 .cart-drawer-quantity-selector input {
-  width: 40px; 
+  width: 65px;
+  height: 29px;
   font-size: 13px;
   text-align: center;
-  line-height: 24px;
-  border: none; 
-  background-color: #9E9E9E; 
+  line-height: 29px;
+  border: none;
+  background-color: #9E9E9E;
   color: white;
-  
 }
-}
+
 /* ---------------------------------------- */
 
 .cart-drawer-footer {
