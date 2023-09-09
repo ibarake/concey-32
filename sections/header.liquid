@@ -4,11 +4,12 @@
       {% render 'nav-icon' %}
     </div>
     <div class="site-logo">
-      {{ settings.logo | image_url: width: '500px' | image_tag }}
+      {{ settings.logo | image_url: width: '300px' | image_tag }}
     </div>
 
     <div class="nav-icon cart-drawer-toggle">
       <button class="cart-btn" onclick="window.openCartDrawer()">{% render 'cart-icon' %}</button>
+      <button class="cart-btn" onclick="window.openCartDrawer()">{% render 'add-to-cart-icon' %}</button>
     </div>
   </div>
   <nav>
