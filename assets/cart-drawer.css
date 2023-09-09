@@ -185,12 +185,12 @@
 }
 
 .cart-drawer-quantity-selector-minus {
-    margin-right: -10px; 
-    padding-top: 6px;
+    margin-right: -12px; 
+    padding-top: 5px;
 }
 
 .cart-drawer-quantity-selector-plus {
-    margin-left: -10px; 
+    margin-left: -12px; 
     padding-top: 4px;
 }
 
