@@ -165,7 +165,7 @@ border: 1px solid #9E9E9E;
 .cart-drawer-quantity-selector {
   display: inline-flex;
   border: 1px solid #e7e7e7;
-  border-radius: 4px;
+  border-radius: 10px;
   margin-top: 10px;
 }
 
