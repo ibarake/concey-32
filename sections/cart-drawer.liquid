@@ -36,19 +36,18 @@
                     <span>{{ item.final_line_price | money }}</span>
                   </div>
                   <div class="cart-drawer-quantity-selector">
-                    <button class="cart-drawer-quantity-selector-minus" type="button">{% render 'minus-icon' %}</button>
-                    <input
-                      type="text"
-                      readonly
-                      value="{{ item.quantity }}"
-                    >
                     <form action="/cart/add" method="post">
+                      <button class="cart-drawer-quantity-selector-minus" type="button">
+                        {% render 'minus-icon' %}
+                      </button>
                       <input
-                        type="hidden"
-                        name="id"
-                        value="{{ product.variants.first.id }}"
+                        type="text"
+                        readonly
+                        value="{{ item.quantity }}"
                       >
-                      <button class="cart-drawer-quantity-selector-plus" type="submit">{% render 'plus-icon' %}</button>
+                      <button class="cart-drawer-quantity-selector-plus" type="button">
+                        {% render 'plus-icon' %}
+                      </button>
                     </form>
                   </div>
                 </div>
