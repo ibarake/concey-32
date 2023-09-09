@@ -185,11 +185,11 @@
 }
 
 .cart-drawer-quantity-selector-minus {
-    margin-right: -7px; 
+    margin-right: -10px; 
 }
 
 .cart-drawer-quantity-selector-plus {
-    margin-left: -7px; 
+    margin-left: -10px; 
 }
 
 .cart-drawer-quantity-selector input {
