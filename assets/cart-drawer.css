@@ -200,6 +200,8 @@
     border: none; 
     background-color: #9E9E9E; 
     color: white;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 /* ---------------------------------------- */
