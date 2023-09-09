@@ -186,12 +186,12 @@
 
 .cart-drawer-quantity-selector-minus {
     margin-right: -10px; 
-    padding: 5px;
+    padding-top: 5px;
 }
 
 .cart-drawer-quantity-selector-plus {
     margin-left: -10px; 
-    padding: 4px;
+    padding-top: 4px;
 }
 
 .cart-drawer-quantity-selector input {
