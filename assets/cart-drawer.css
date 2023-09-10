@@ -156,7 +156,7 @@
 .cart-drawer-item-main-flex-left button  {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
 }
 
 .cart-drawer-item-main-flex-right span {
