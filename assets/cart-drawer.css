@@ -158,6 +158,7 @@
     top: 0;
     right: 0;
     border: none;
+    background-color: transparent;
 }
 
 .cart-drawer-item-main-flex-left button svg {
