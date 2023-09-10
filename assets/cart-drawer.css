@@ -157,6 +157,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    border: none;
 }
 
 .cart-drawer-item-main-flex-right span {
