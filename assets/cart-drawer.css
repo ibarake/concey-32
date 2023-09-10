@@ -160,6 +160,10 @@
     border: none;
 }
 
+.cart-drawer-item-main-flex-left button svg {
+    width: 50%;
+}
+
 .cart-drawer-item-main-flex-right span {
     color: #000;
     font-size: 16px;
