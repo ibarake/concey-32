@@ -153,8 +153,10 @@
     line-height: normal;
 }
 
-.cart-drawer-item-main-flex-left  {
-  
+.cart-drawer-item-main-flex-left button  {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .cart-drawer-item-main-flex-right span {
