@@ -158,6 +158,7 @@
     top: 0;
     right: 0;
     border: none;
+    width: 50%;
 }
 
 .cart-drawer-item-main-flex-right span {
