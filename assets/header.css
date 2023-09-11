@@ -29,6 +29,11 @@ header.shrink .cart-btn svg {
   transform: scale(1); /* adjust scaling as needed */
   transition: all 0.3s ease;
 }
+
+header svg {
+  size: 20px;
+}
+
 .main-header{
   display: flex;
   flex-direction: row;
