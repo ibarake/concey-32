@@ -34,6 +34,7 @@ header nav{
   background-color: var(--main-gray);
   transform: scaleY(0);
   width: 100%;
+  z-index: 5;
 }
 
 header nav ul{
