@@ -1,8 +1,10 @@
 header {
-  position: sticky;
-  top: 0;
-  z-index: 100; /* Ensure it stays on top of other content */
-  transition: all 0.3s; /* Smooth transitions */
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: all .3s;
+    width: 100%;
+    background: var(--main-white);
 }
 .main-header{
   display: flex;
