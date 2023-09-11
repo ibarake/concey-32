@@ -12,7 +12,10 @@ header.shrink .main-header {
 }
 
 header.shrink .nav-icon svg {
-  transform: scale(0.5); /* adjust scaling as needed */
+  transform: scale(0.4); /* adjust scaling as needed */
+}
+header.shrink .cart-btn svg {
+  transform: scale(0.8); /* adjust scaling as needed */
 }
 .main-header{
   display: flex;
