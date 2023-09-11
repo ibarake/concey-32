@@ -8,6 +8,7 @@
   </div>
   <script>
     
+    
   window.addEventListener('scroll', function() {
       const parallax = document.querySelector('.img-parallax');
       const scrolled = window.scrollY;
@@ -15,6 +16,15 @@
         scrolled * 0.5
       }px)`;
     });
+
+      window.addEventListener('scroll', function() {
+      const parallax = document.querySelector('.parallax-title');
+      const scrolled = window.scrollY;
+      parallax.style.transform = `translateY(${
+        scrolled * -0.5
+      }px)`;
+    });
+
 
   </script>
 </section>
