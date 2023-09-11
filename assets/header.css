@@ -12,7 +12,7 @@ header.shrink site-logo{
   transition: all 0.3s ease;
 }
 header.shrink .main-header {
-  max-height: 90px; /* adjust as needed */
+  max-height: 110px; /* adjust as needed */
   padding: 10px 100px; /* adjust as needed */
   transition: all 0.3s ease;
 }
