@@ -71,12 +71,53 @@ letter-spacing: 0.313px;
 }
 
 .btn-sub, span{
-  color: #595959;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 14px; /* 87.5% */
-  letter-spacing: 0.25px;
+    color: #595959;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px; 
+    letter-spacing: 0.25px;
+}
+
+@media screen and (max-width: 480px) {
+    .newsletter-section  {
+        margin-left: 25px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .title-newsletter {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        margin-right: 8%;
+    }
+
+    .content-newsletter{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-right: 4%;
+    }
+
+    .newsletter-form{
+        max-width: 100%;
+    }
+
+    .newsletter-form label{
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 38%;
+    }
+
+    .newsletter-form input[type="email"] {
+        width: 260px;
+        margin-left: 2%;
+        
+    }
 }
