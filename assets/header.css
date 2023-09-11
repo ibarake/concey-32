@@ -5,6 +5,7 @@ header {
     transition: all 0.3s ease;
     width: 100%;
     background: var(--main-white);
+  height: fit-content;
     max-height: 120px;
 }
 header.shrink .site-logo{
