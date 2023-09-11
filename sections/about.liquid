@@ -4,7 +4,7 @@
       {{ section.settings.about_image | image_url: width: 392 | image_tag: alt: section.settings.about_image.alt }}
     </div>
     <div class="about-content">
-      <button class="btn"><span>About me</span></button>
+      <button class="btn"><span>{{ section.settings.about_title }}</span></button>
 
       <p class="about-text">
         {{ section.settings.about_text }}
