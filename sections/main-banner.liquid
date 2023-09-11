@@ -2,7 +2,12 @@
   <div class="parallax-inner">
     <img src="{{ section.settings.parallax-image | image_url }}" class="img-parallax" loading="lazy">
   </div>
+  <div>
+    <h1>{{ section.settings.title }}</h1>
+    <h2>{{ section.settings.subtitle }}</h2>
+  </div>
   <script>
+    
     
   
   window.addEventListener('scroll', function() {
@@ -12,6 +17,7 @@
         scrolled * 0.5
       }px)`;
     });
+
 
 
   </script>
@@ -24,6 +30,18 @@
       "type": "image_picker",
       "id": "parallax-image",
       "label": "parallax image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Concey 32"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub-title",
+      "default": "The story continues"
     }
   ],
   "presets" : [{ "name" : "main banner" }]
