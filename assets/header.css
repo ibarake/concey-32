@@ -48,6 +48,9 @@ header.shrink .cart-btn svg {
 
 .nav-icon{
   height: 100%;
+  display: flex;
+  align-items: center;
+  transform-origin: center top;
 } 
 .nav-icon svg{
   height: 50%;
