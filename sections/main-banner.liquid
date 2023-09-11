@@ -2,8 +2,8 @@
   <div class="parallax-inner">
     <img src="{{ section.settings.parallax-image | image_url }}" class="img-parallax" loading="lazy">
   </div>
-</section>
-<script>
+  <script>
+    
   
   window.addEventListener('scroll', function() {
       const parallax = document.querySelector('.img-parallax');
@@ -13,7 +13,9 @@
       }px)`;
     });
 
-</script>
+
+  </script>
+</section>
 {% schema %}
 {
   "name": "Main banner home page",
