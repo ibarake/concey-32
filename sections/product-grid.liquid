@@ -1,10 +1,7 @@
 <product-grid>
   {% if section.settings['parallax-image'] != blank %}
     <section class="parallax">
-      <div class="parallax-inner">
-        <img src="{{ section.settings.parallax-image | image_url }}" class="img-parallax" loading="lazy">
-      </div>
-
+   
       <div class="product-section">
         <div class="product-header">
           <h2 class="section-title">Featured Items</h2>
@@ -47,27 +44,13 @@
   {% endif %}
 
   <script>
-    
-    
-    
 
-
-
-    window.addEventListener('scroll', function() {
-      const parallax = document.querySelector('.img-parallax');
-      const scrolled = window.scrollY;
-      parallax.style.transform = `translateY(${
-        scrolled * 0.5
-      }px)`;
-    });
     $('.slick-prev-c').on('click', () => {
       $('.slick-carousel').slick('slickPrev')
     });
     $('.slick-next-c').on('click', () => {
       $('.slick-carousel').slick('slickNext')
     });
-
-
 
   </script>
 </product-grid>

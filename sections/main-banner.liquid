@@ -3,7 +3,15 @@
     <img src="{{ section.settings.parallax-image | image_url }}" class="img-parallax" loading="lazy">
   </div>
 </section>
-
+<script>
+  window.addEventListener('scroll', function() {
+      const parallax = document.querySelector('.img-parallax');
+      const scrolled = window.scrollY;
+      parallax.style.transform = `translateY(${
+        scrolled * 0.5
+      }px)`;
+    });
+</script>
 {% schema %}
 {
   "name": "Main banner home page",
