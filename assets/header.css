@@ -18,7 +18,7 @@ header.shrink .main-header {
 }
 
 header.shrink .nav-icon svg {
-  transform: scale(0.5); /* adjust scaling as needed */
+  transform: scale(0.7); /* adjust scaling as needed */
   transition: all 0.3s ease;
 }
 header.shrink .cart-btn svg {
