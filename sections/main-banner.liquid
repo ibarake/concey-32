@@ -1,4 +1,9 @@
-<h1>{{ product.title }}</h1>
+<section>
+  <div class="parallax-inner">
+    <img src="{{ section.settings.parallax-image | image_url }}" class="img-parallax" loading="lazy">
+  </div>
+</section>
+
 {% schema %}
 {
   "name": "Main banner home page",
