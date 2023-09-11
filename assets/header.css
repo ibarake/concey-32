@@ -10,6 +10,8 @@ header {
 header.shrink site-logo{
   transform: scale(0.5);
   transition: all 0.3s ease;
+  max-height: 100%;
+  width: auto;
 }
 header.shrink .main-header {
   max-height: 110px; /* adjust as needed */
