@@ -11,11 +11,12 @@
     
     
     
+    
   window.addEventListener('scroll', function() {
       const parallax = document.querySelector('.img-parallax');
       const scrolled = window.scrollY;
       parallax.style.transform = `translateY(${
-        scrolled * -0.5
+        scrolled * 0.5
       }px)`;
     });
 
@@ -26,6 +27,7 @@
         scrolled * 0.5
       }px)`;
     });
+
 
 
 
