@@ -2,16 +2,17 @@
   <img src="{{ section.settings.stilized-image | image_url }}" class="stilized-image">
 </div>
 {% schema %}
-  {
-    "name": "image banner",
-    "settings": [
-      {
-      "type": "image_picker",
-      "id": "stilized-image",
-      "label": "stilized-image"
-      }
-    ]
-  }
+{
+  "name": "image banner",
+  "settings": [
+    {
+    "type": "image_picker",
+    "id": "stilized-image",
+    "label": "stilized-image"
+    }
+  ],
+  "presets": [{ "name": "image banner"}]
+}
 {% endschema %}
 
 {% stylesheet %}
