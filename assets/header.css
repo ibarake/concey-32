@@ -33,6 +33,7 @@ header nav{
   top: 100%;
   background-color: var(--main-gray);
   transform: scaleY(0);
+  width: 100%;
 }
 
 header nav ul{
