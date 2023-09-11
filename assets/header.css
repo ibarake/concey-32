@@ -7,18 +7,13 @@ header {
     background: var(--main-white);
     max-height: 120px;
 }
-header.shrink site-logo{
+header.shrink .site-logo{
   transform: scale(0.5);
   transition: all 0.3s ease;
   max-height: 100%;
   width: auto;
 }
-header.shrink site-logo img{
-  transform: scale(0.5);
-  transition: all 0.3s ease;
-  max-height: 100%;
-  width: auto;
-}
+
 header.shrink .main-header {
   max-height: 110px; /* adjust as needed */
   padding: 10px 100px; /* adjust as needed */
