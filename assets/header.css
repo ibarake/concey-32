@@ -1,5 +1,8 @@
 header {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Ensure it stays on top of other content */
+  transition: all 0.3s; /* Smooth transitions */
 }
 .main-header{
   display: flex;
