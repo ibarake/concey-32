@@ -1,6 +1,5 @@
 <product-grid>
-  {% if section.settings['parallax-image'] != blank %}
-    <section class="parallax">
+    <section class="main-banner">
    
       <div class="product-section">
         <div class="product-header">
@@ -41,7 +40,6 @@
         </div>
       </div>
     </section>
-  {% endif %}
 
   <script>
 
@@ -63,10 +61,6 @@
       "type": "collection",
       "id": "collection",
       "label": "Collection"
-    }, {
-      "type": "image_picker",
-      "id": "parallax-image",
-      "label": "parallax image"
     }, {
       "type": "image_picker",
       "id": "stilized-image",
