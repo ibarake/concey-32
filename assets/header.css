@@ -9,17 +9,21 @@ header {
 }
 header.shrink site-logo{
   transform: scale(0.8);
+  transition: all 0.3s ease;
 }
 header.shrink .main-header {
   max-height: 80px; /* adjust as needed */
   padding: 10px 100px; /* adjust as needed */
+  transition: all 0.3s ease;
 }
 
 header.shrink .nav-icon svg {
   transform: scale(0.5); /* adjust scaling as needed */
+  transition: all 0.3s ease;
 }
 header.shrink .cart-btn svg {
   transform: scale(1); /* adjust scaling as needed */
+  transition: all 0.3s ease;
 }
 .main-header{
   display: flex;
