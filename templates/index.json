@@ -1,5 +1,11 @@
 {
   "sections": {
+    "53f671ab-1b04-48aa-81d7-39914412e88f": {
+      "type": "main-banner",
+      "settings": {
+        "parallax-image": "shopify:\/\/shop_images\/33497d9bc4977d1cfa66d1dc99d603d3.png"
+      }
+    },
     "c1ecc6d6-be3d-4752-b587-1602268028a6": {
       "type": "product-grid",
       "settings": {
@@ -58,19 +64,13 @@
         "newsletter_title": "Subscribe to Our Newsletter",
         "newsletter_description": "Sign up to receive our latest updates and promotions."
       }
-    },
-    "53f671ab-1b04-48aa-81d7-39914412e88f": {
-      "type": "main-banner",
-      "settings": {
-        "footer_linklist_title": "None"
-      }
     }
   },
   "order": [
+    "53f671ab-1b04-48aa-81d7-39914412e88f",
     "c1ecc6d6-be3d-4752-b587-1602268028a6",
     "c2a33a77-5cda-4624-8729-cfcced7b0d9a",
     "a31d79c1-a9ae-472a-843f-f8809d98bb33",
-    "e8d26fbf-9ed4-44f5-a8fc-b1495be5e1fc",
-    "53f671ab-1b04-48aa-81d7-39914412e88f"
+    "e8d26fbf-9ed4-44f5-a8fc-b1495be5e1fc"
   ]
 }
