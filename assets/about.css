@@ -43,3 +43,42 @@
     line-height: 32px;
     letter-spacing: 0.313px;
 }
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    display: flex;
+  }
+
+  .about-image {
+      margin: 0;
+  }
+
+  .about-content {
+    margin: 4%;
+  }
+
+  .img1 {
+      margin-left: 0;
+      width: 100%;
+      height: auto;
+  }
+
+  .btn {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .about-text {
+    margin: auto;
+    color: #595959;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    letter-spacing: 0.313px;
+  }
+}
