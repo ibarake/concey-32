@@ -5,6 +5,7 @@ header {
     transition: all 0.3s ease;
     width: 100%;
     background: var(--main-white);
+    max-height: 100px;
 }
 header.shrink .main-header {
   max-height: 50px; /* adjust as needed */
