@@ -3,6 +3,10 @@
   display: block; /* Ensures no margin issues */
 }
 
+.product-image {
+  overflow: hidden;
+}
+
 /* Add hover effect */
 .product:hover img {
   transform: scale(1.1); /* Scale image by 10% on hover */
