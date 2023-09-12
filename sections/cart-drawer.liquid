@@ -134,7 +134,7 @@
             .parentElement
             .parentElement;
           const key = rootItem.getAttribute("data-line-item-key");
-
+          console.log(rootItem, key)
   // Get new quantity
           const currentQuantity = Number(button.parentElement.querySelector("input").value);
           const isUp = button.classList.contains("cart-drawer-quantity-selector-plus");
