@@ -120,7 +120,7 @@
 }
 
 .qty-input .product-qty {
-	width: 50px;
+	width: 40px;
 	min-width: 0;
 	display: inline-block;
 	text-align: center;
@@ -136,8 +136,8 @@
 .qty-input .qty-count {
 	padding: 0;
 	cursor: pointer;
-	width: 2.5rem;
-	font-size: 1.25em;
+	width: 1.5rem;
+	font-size: 1em;
 	text-indent: -100px;
 	overflow: hidden;
 	position: relative;
