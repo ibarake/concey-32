@@ -1,5 +1,5 @@
 .price {
-  font-family: Proxima nova regular;
+  font-family: Proxima nova regular !important;
   font-size: 16px;
   font-style: normal;
   font-weight: 250;
@@ -9,7 +9,7 @@
   padding: 10px 20px 10px 20px;
 }
 .product-title {
-  font-family: Proxima nova regular;
+  font-family: Proxima nova regular !important;
   font-size: 16px;
   font-style: normal;
   font-weight: 250;
