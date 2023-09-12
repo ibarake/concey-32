@@ -95,7 +95,7 @@
 }
 
 .qty-input {
-	color: var(--main-gray);
+	color: var(--gray);
 	background: transparent;
 	display: flex;
 	align-items: center;
@@ -160,11 +160,11 @@
 }
 
 .qty-input .qty-count--minus {
-	border-right: 1px solid var(--main-gray);
+	border-right: 1px solid var(--gray);
 }
 
 .qty-input .qty-count--add {
-	border-left: 1px solid var(--main-gray);
+	border-left: 1px solid var(--gray);
 }
 
 .qty-input .qty-count--add:after {
