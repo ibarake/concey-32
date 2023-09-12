@@ -15,7 +15,9 @@
     <div class="slick-carousel">
       {% for product in section.settings.collection.products %}
         <div class="product">
-          <div class="product-image">hello</div>
+          <div class="product-image">
+            {{ product.images.first.src | image_url: width: '500' | image_tag }}
+          </div>
           <div class="product-footer">
             <h4 class="product-collection">{{ product.collections.first.title }}</h4>
             <h3 class="product-title">{{ product.title }}</h3>
