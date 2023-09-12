@@ -136,7 +136,7 @@
 .qty-input .qty-count {
 	padding: 0;
 	cursor: pointer;
-	width: 1.5rem;
+	width: 1rem;
 	font-size: 1em;
 	text-indent: -100px;
 	overflow: hidden;
