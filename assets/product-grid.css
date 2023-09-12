@@ -84,6 +84,11 @@
   justify-content: space-between;
 }
 
+.cart-add {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .add-to-cart-btn {
   background: transparent;
   border: none;
