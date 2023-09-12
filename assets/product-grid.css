@@ -3,19 +3,11 @@
   overflow: hidden; /* Clip the overflowing parts of the image when it scales */
   width: 310px; /* Same width as your image */
   height: auto; /* Replace with the height of your image */
-}
-
-.product img {
-  transition: transform 0.3s ease;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center the image */
+  background: var(--light-gray);
 }
 
 .product:hover img {
-  transform: translate(-50%, -50%) scale(1.1); /* Center and scale the image */
+  transform: scale(1.1); /* Center and scale the image */
 }
 
 .product-grid {
@@ -61,7 +53,6 @@
 }
 .product img{
   padding: 20px;
-  background: var(--light-gray);
   width: 310px;
   height: auto;
 }
