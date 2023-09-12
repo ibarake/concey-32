@@ -24,7 +24,7 @@
 }
 
 .product-collection {
-  color: #9E9E9E;
+  color: var(--light-gray);
   font-family: Arial;
   font-size: 12px;
   font-style: normal;
