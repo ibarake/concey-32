@@ -1,8 +1,7 @@
 .product {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   gap: 0px;
-  width: fit-content;
 }
 .product img{
   background: var(--light-gray);
