@@ -1,5 +1,5 @@
 .product {
-  background-color: var(--light-gray);
+  background: var(--light-gray);
 }
 .product-section {
   box-sizing: border-box;
@@ -75,5 +75,6 @@
 }
 
 .add-to-cart-btn {
+  background: transparent;
   border: none;
 }
