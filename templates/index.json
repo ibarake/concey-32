@@ -15,6 +15,12 @@
         "title": "Featured Items"
       }
     },
+    "7a1a2db6-1244-45bf-b43b-3b966009f24e": {
+      "type": "image-banner",
+      "settings": {
+        "stilized-image": "shopify:\/\/shop_images\/image_new_york.png"
+      }
+    },
     "c2a33a77-5cda-4624-8729-cfcced7b0d9a": {
       "type": "about",
       "settings": {
@@ -72,6 +78,7 @@
   "order": [
     "53f671ab-1b04-48aa-81d7-39914412e88f",
     "c1ecc6d6-be3d-4752-b587-1602268028a6",
+    "7a1a2db6-1244-45bf-b43b-3b966009f24e",
     "c2a33a77-5cda-4624-8729-cfcced7b0d9a",
     "a31d79c1-a9ae-472a-843f-f8809d98bb33",
     "e8d26fbf-9ed4-44f5-a8fc-b1495be5e1fc"
