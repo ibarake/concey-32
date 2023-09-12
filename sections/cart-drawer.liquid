@@ -189,11 +189,7 @@
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: item
-            }).then(() => {
-                updateCartDrawer();
-                updateCartItemCounts(cart.item_count);
-              }
-            )
+            })
         });
     });
     }
