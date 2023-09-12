@@ -1,7 +1,6 @@
 .product img {
   transition: transform 0.3s ease;
   display: block; /* Ensures no margin issues */
-  overflow: hidden;
 }
 
 /* Add hover effect */
@@ -43,6 +42,7 @@
   line-height: normal;
 }
 .product {
+  overflow: hidden;
   display: flex !important;
   flex-direction: column;
   gap: 0px;
