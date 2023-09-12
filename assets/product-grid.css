@@ -173,7 +173,7 @@
 
 .qty-input .qty-count:disabled {
 	color: #ccc;
-	background: #f2f2f2;
+	background: transparent;
 	cursor: not-allowed;
 	border-color: transparent;
 }
