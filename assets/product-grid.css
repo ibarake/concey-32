@@ -115,6 +115,7 @@
 .qty-input {
   border-radius: 50px;
   border: 1px solid var(--gray);
+  height: fit-content;
 }
 
 .add-to-cart-btn {
