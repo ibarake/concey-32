@@ -216,27 +216,6 @@
         openCartDrawer();
       });
     });
-
-    function removeFromCart(lineItemId) {
-        var url = "/cart/change.js";
-        var formData = {
-          id: Number(lineItemId),
-          quantity: 0
-        }
-        fetch(url, {
-            method: "POST",
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log("Product removed successfully!", data);
-            updateCartItemCounts(data.item_count);
-            updateCartDrawer();
-        })
-        .catch(error => {
-            console.error("Error removing product from cart:", error);
-        });
-    }
 </script>
 
 {% schema %}
