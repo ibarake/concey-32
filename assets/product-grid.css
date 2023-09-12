@@ -146,8 +146,8 @@
 .qty-input .qty-count:before,
 .qty-input .qty-count:after {
 	content: "";
-	height: 2px;
-	width: 10px;
+	height: 1px;
+	width: 5px;
 	position: absolute;
 	display: block;
 	background: var(--gray);
