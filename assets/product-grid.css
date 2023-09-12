@@ -24,8 +24,12 @@
 }
 
 .product-collection {
-  color: #000;
-  
+  color: #9E9E9E;
+  font-family: Arial;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .product {
   display: flex !important;
