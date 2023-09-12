@@ -21,19 +21,12 @@
               <h3 class="product-title">{{ product.title }}</h3>
               <div class="price-cart">
                 <p class="price">{{ product.price }}</p>
-                <form action="/cart/add" method="post">
-                  <input
-                    type="hidden"
-                    name="id"
-                    value="{{ product.variants.first.id }}"
-                  >
                   <button type="submit" class="add-to-cart-btn">
                     {% render 'add-to-cart-icon' %}
                   </button>
                   <button type="submit" class="add-to-cart-bag-btn">
                     {% render 'add-to-cart-bag-icon' %}
                   </button>
-                </form>
               </div>
             </div>
           </div>
