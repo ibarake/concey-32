@@ -82,7 +82,6 @@
 .price-cart {
   display: flex;
   justify-content: space-between;
-  margin-right: 100px;
 }
 
 .add-to-cart-btn {
