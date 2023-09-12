@@ -22,6 +22,7 @@
               <h3 class="product-title">{{ product.title }}</h3>
               <div class="price-cart">
                 <p class="price">{{ product.price }}</p>
+                <div class="cart-add">
                   <div class="qty-input">
                   	<button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
                   	<input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
@@ -30,6 +31,7 @@
                   <button type="submit" class="add-to-cart-bag-btn">
                     {% render 'add-to-cart-icon' %}
                   </button>
+                </div>
               </div>
             </div>
           </div>
