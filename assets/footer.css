@@ -13,10 +13,6 @@
     transform-origin: center top;
 }
 
-.footer-icons .twitter-icon, .footer-icons .instagram-icon, .footer-icons .facebook-icon {
-  transform: scale(0.3); 
-}
-
 #footer-navigation {
   text-align: center;
   background: #f3f3f3;
