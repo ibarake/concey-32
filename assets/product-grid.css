@@ -4,11 +4,13 @@
   gap: 0px;
 }
 .product img{
+  padding: 20px;
   background: var(--light-gray);
   width: 310px;
   height: auto;
 }
 .product .product-footer {
+  padding: 20px;
   background: var(--light-gray);
   width: 310px;
 }
