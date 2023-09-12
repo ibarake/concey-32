@@ -160,11 +160,11 @@
 }
 
 .qty-input .qty-count--minus {
-	border-right: 1px solid #e2e2e2;
+	border-right: 1px solid var(-main-gray);
 }
 
 .qty-input .qty-count--add {
-	border-left: 1px solid #e2e2e2;
+	border-left: 1px solid var(-main-gray);
 }
 
 .qty-input .qty-count--add:after {
