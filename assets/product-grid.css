@@ -1,6 +1,7 @@
 .product img {
   transition: transform 0.3s ease;
   display: block; /* Ensures no margin issues */
+  overflow: hidden;
 }
 
 /* Add hover effect */
