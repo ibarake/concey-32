@@ -226,13 +226,13 @@
 
     function removeFromCart(lineItemId) {
         var url = "/cart/change.js";
-        var formData = {
+        var formData = [{
           id: lineItemId,
           quantity: 0
-        }
+        }]
         fetch(url, {
             method: "POST",
-            body: formData
+            body: JSON.stringify({ formData })
         })
         .then(response => response.json())
         .then(data => {
