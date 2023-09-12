@@ -5,7 +5,7 @@
 
 .product-image {
   overflow: hidden;
-  width: 70%;
+  width: 60%;
   height: auto;
   background: var(--light-gray);
   padding: 20px;
