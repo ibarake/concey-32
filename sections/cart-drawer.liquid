@@ -220,8 +220,8 @@
     function removeFromCart(lineItemId) {
         var url = "/cart/change.js";
         var formData = {
-          'id': Number(lineItemId),
-          'quantity': 0
+          id: Number(lineItemId),
+          quantity: 0
         }
         fetch(url, {
             method: "POST",
