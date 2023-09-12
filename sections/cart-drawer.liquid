@@ -175,23 +175,6 @@
           closeCartDrawer();
         });
       });
-
-      document.querySelectorAll(".remove-from-cart").forEach(function(button) {
-        button.addEventListener("click", function() {
-            var key = this.getAttribute("data-line-item-key");
-
-            const item = {
-              id: key,
-              quantity: 0
-            }
-            console.log(item)
-            await fetch('/cart/add.js', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: item
-            })
-        });
-    });
     }
 
     addCartDrawerListeners();
