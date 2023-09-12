@@ -64,13 +64,13 @@
 }
 .product img{
   background: transparent;
-  width: 70%;
+  width: 60%;
   height: auto;
 }
 .product .product-footer {
   padding: 20px;
   background: var(--light-gray);
-  width: 310px;
+  width: 60%;
 }
 .product-section {
   box-sizing: border-box;
