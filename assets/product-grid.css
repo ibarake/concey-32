@@ -1,8 +1,8 @@
 .product-image {
   position: relative;
   overflow: hidden; /* Clip the overflowing parts of the image when it scales */
-  width: 500px; /* Same width as your image */
-  height: [your-image-height]; /* Replace with the height of your image */
+  width: 310px; /* Same width as your image */
+  height: auto; /* Replace with the height of your image */
 }
 
 .product img {
