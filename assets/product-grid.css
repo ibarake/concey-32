@@ -126,10 +126,12 @@
 .add-to-cart-btn {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 .add-to-cart-bag-btn {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .qty-input {
