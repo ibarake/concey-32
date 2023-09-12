@@ -1,5 +1,6 @@
 .product {
   background: var(--light-gray);
+  width: fit-content;
 }
 .product img{
   width: 310px;
