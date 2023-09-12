@@ -1,13 +1,18 @@
+.product img {
+  transition: transform 0.3s ease;
+  display: block; /* Ensures no margin issues */
+}
+
 .product-image {
-  position: relative;
-  overflow: hidden; /* Clip the overflowing parts of the image when it scales */
-  width: 310px; /* Same width as your image */
-  height: auto; /* Replace with the height of your image */
+  overflow: hidden;
+  width: 310px;
+  height: auto;
   background: var(--light-gray);
 }
 
+/* Add hover effect */
 .product:hover img {
-  transform: scale(1.1); /* Center and scale the image */
+  transform: scale(1.1); /* Scale image by 10% on hover */
 }
 
 .product-grid {
@@ -53,6 +58,7 @@
 }
 .product img{
   padding: 20px;
+  background: transparent;
   width: 310px;
   height: auto;
 }
