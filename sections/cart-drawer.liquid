@@ -222,7 +222,7 @@
         var formData = new FormData();
         formData.append("line", lineItemId);
         formData.append("quantity", 0);  // Setting quantity to 0 will remove the item
-        console.log(formData)
+
         fetch(url, {
             method: "POST",
             body: formData
