@@ -35,6 +35,8 @@
   display: flex !important;
   flex-direction: column;
   gap: 0px;
+  justify-content: center;
+  align-items: center;
 }
 .product img{
   padding: 20px;
