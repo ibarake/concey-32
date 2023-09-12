@@ -15,7 +15,7 @@
   transform: scale(1.1);
 }
 
-.product-footer:hover .product img {
+.product-footer:hover ~ img {
   transform: scale(1.1);
 }
 
