@@ -163,7 +163,7 @@
 	padding: 0;
 	cursor: pointer;
 	width: 1.5rem;
-    height: 1.2rem;
+    height: 1.5rem;
 	font-size: 1em;
 	text-indent: -100px;
 	overflow: hidden;
@@ -173,8 +173,8 @@
 .qty-input .qty-count:before,
 .qty-input .qty-count:after {
 	content: "";
-	height: 1.5px;
-	width: 7.5px;
+	height: 1px;
+	width: 10px;
 	position: absolute;
 	display: block;
 	background: var(--gray);
