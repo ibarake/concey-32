@@ -9,7 +9,11 @@
   line-height: normal;
   border-radius: 50px;
   border: 1px solid #9E9E9E;
-  padding: 10px 20px 10px 20px;
+  height: 2em;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .product-title {
   font-family: Proxima nova regular !important;
