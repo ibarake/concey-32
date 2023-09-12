@@ -178,8 +178,19 @@
 
       document.querySelectorAll(".remove-from-cart").forEach(function(button) {
         button.addEventListener("click", function() {
-            var lineItemId = this.getAttribute("data-line-item-key");
-            removeFromCart(lineItemId);
+            var key = this.getAttribute("data-line-item-key");
+
+            const item = {
+              id: key,
+              quantity: 0
+            }
+
+            await fetch('/cart/add.js', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: item
+            })
+
         });
     });
     }
