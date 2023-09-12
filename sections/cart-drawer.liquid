@@ -169,6 +169,13 @@
           e.stopPropagation();
         });
 
+        document.querySelectorAll(".cart-drawer-header-right-close, .cart-drawer").forEach((el) => {
+          el.addEventListener("click", () => {
+            console.log("closing drawer");
+            closeCartDrawer();
+          });
+        });
+
         function addRemoveFromCartListeners() {
     document.querySelectorAll(".remove-from-cart").forEach((button) => {
       button.addEventListener("click", async () => {
