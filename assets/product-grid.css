@@ -1,3 +1,11 @@
+.price {
+  font-family: Proxima Nova;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+}
+
 .product {
   display: flex !important;
   flex-direction: column;
