@@ -3,6 +3,7 @@
 }
 .product img{
   width: 310px;
+  height: auto;
 }
 .product .product-footer {
   width: 310px;
