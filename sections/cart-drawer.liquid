@@ -209,6 +209,13 @@
         openCartDrawer();
       });
     });
+
+    document.querySelectorAll(".remove-from-cart").forEach(function(button) {
+        button.addEventListener("click", function() {
+            var lineItemId = this.getAttribute("data-line-item-id");
+            removeFromCart(lineItemId);
+        });
+    });
 </script>
 
 {% schema %}
