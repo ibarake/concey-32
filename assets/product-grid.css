@@ -1,5 +1,6 @@
 .product {
   background: var(--light-gray);
+  width: 310px;
 }
 .product-section {
   box-sizing: border-box;
