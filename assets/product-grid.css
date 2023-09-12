@@ -64,7 +64,7 @@
 }
 .product img{
   background: transparent;
-  width: 300px;
+  width: auto;
   height: auto;
   margin: auto;
   object-fit: cover;
