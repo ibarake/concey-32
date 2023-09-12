@@ -5,6 +5,8 @@
 
 .product-image {
   overflow: hidden;
+  width: 310px;
+  height: auto;
 }
 
 /* Add hover effect */
