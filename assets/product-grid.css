@@ -1,12 +1,13 @@
 .product {
-  background: var(--light-gray);
   width: fit-content;
 }
 .product img{
+  background: var(--light-gray);
   width: 310px;
   height: auto;
 }
 .product .product-footer {
+  background: var(--light-gray);
   width: 310px;
 }
 .product-section {
