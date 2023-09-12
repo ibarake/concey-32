@@ -5,10 +5,11 @@
 
 .product-image {
   overflow: hidden;
-  width: 310px;
+  width: 50%;
   height: auto;
   background: var(--light-gray);
   padding: 20px;
+  margin: auto;
 }
 
 .product img:hover {
