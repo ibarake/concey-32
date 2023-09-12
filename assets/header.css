@@ -13,7 +13,7 @@ header.shrink .site-logo{
   transition: all 0.3s ease;
   max-height: 100%;
   width: auto;
-  transform-origin: center top;
+  transform-origin: center center;
 }
 
 header.shrink .main-header {
@@ -52,7 +52,7 @@ header.shrink .cart-btn svg {
   height: 100%;
   display: flex;
   align-items: center;
-  transform-origin: center top;
+  transform-origin: center center;
 } 
 .nav-icon svg{
   height: 50%;
