@@ -11,7 +11,11 @@
   padding: 20px;
 }
 
-.product img:hover, .product .product-footer:hover img {
+.product img:hover {
+  transform: scale(1.1);
+}
+
+.product .product-footer:hover img {
   transform: scale(1.1);
 }
 
