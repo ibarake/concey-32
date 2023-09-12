@@ -151,7 +151,7 @@
 	width: 10px;
 	position: absolute;
 	display: block;
-	background: transparent;
+	background: var(--gray);
 	top: 0;
 	bottom: 0;
 	left: 0;
