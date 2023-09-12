@@ -27,7 +27,7 @@
                   	<input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
                   	<button class="qty-count qty-count--add" data-action="add" type="button">+</button>
                   </div>
-                  <button type="submit" class="add-to-cart-bag-btn">
+                  <button type="submit" class="add-to-cart-bag-btn" data-variant-id="{{ product.id }}">
                     {% render 'add-to-cart-icon' %}
                   </button>
                 </div>
