@@ -1,52 +1,49 @@
 <product-grid>
-    <section class="main-banner">
-   
-      <div class="product-section">
-        <div class="product-header">
-          <h2 class="section-title">Featured Items</h2>
-          <div class="slick-buttons">
-            <button class="slick-prev-c" onclick="() => $('.slick-carousel').slick('slickPrev')">
-              {% render 'arrow-left-icon' %}
-            </button>
-            <button class="slick-next-c" onclick="() => $('.slick-carousel').slick('slickNext')">
-              {% render 'arrow-right-icon' %}
-            </button>
-          </div>
-        </div>
-        <div class="slick-carousel">
-          {% for product in section.settings.collection.products %}
-            <div class="product">
-              {{ product.images.first.src | image_url: width: '200' | image_tag }}
-              <div class="product-footer">
-                <h4 class="product-collection">{{ product.collections[1].title }}</h4>
-                <h3 class="product-title">{{ product.title }}</h3>
-                <div class="price-cart">
-                  <p class="price">{{ product.price }}</p>
-                  <form action="/cart/add" method="post">
-                    <input
-                      type="hidden"
-                      name="id"
-                      value="{{ product.variants.first.id }}"
-                    >
-                    <button type="submit" class="add-to-cart-btn">{% render 'add-to-cart-icon' %}</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          {% endfor %}
+  <section class="main-banner">
+    <div class="product-section">
+      <div class="product-header">
+        <h2 class="section-title">{{ section.settings.title }}</h2>
+        <div class="slick-buttons">
+          <button class="slick-prev-c" onclick="() => $('.slick-carousel').slick('slickPrev')">
+            {% render 'arrow-left-icon' %}
+          </button>
+          <button class="slick-next-c" onclick="() => $('.slick-carousel').slick('slickNext')">
+            {% render 'arrow-right-icon' %}
+          </button>
         </div>
       </div>
-    </section>
+      <div class="slick-carousel">
+        {% for product in section.settings.collection.products %}
+          <div class="product">
+            {{ product.images.first.src | image_url: width: '200' | image_tag }}
+            <div class="product-footer">
+              <h4 class="product-collection">{{ product.collections[1].title }}</h4>
+              <h3 class="product-title">{{ product.title }}</h3>
+              <div class="price-cart">
+                <p class="price">{{ product.price }}</p>
+                <form action="/cart/add" method="post">
+                  <input
+                    type="hidden"
+                    name="id"
+                    value="{{ product.variants.first.id }}"
+                  >
+                  <button type="submit" class="add-to-cart-btn">{% render 'add-to-cart-icon' %}</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
   <script>
-
     $('.slick-prev-c').on('click', () => {
       $('.slick-carousel').slick('slickPrev')
     });
     $('.slick-next-c').on('click', () => {
       $('.slick-carousel').slick('slickNext')
     });
-
   </script>
 </product-grid>
 
@@ -58,6 +55,12 @@
       "type": "collection",
       "id": "collection",
       "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Featured Items"
     }
   ],
   "presets": [
