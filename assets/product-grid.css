@@ -5,7 +5,7 @@
 
 .product-image {
   overflow: hidden;
-  width: 60%;
+  width: 70%;
   height: auto;
   background: var(--light-gray);
   padding: 20px;
@@ -73,7 +73,7 @@
 .product .product-footer {
   padding: 20px;
   background: var(--light-gray);
-  width: 60%;
+  width: 70%;
 }
 .product-section {
   box-sizing: border-box;
