@@ -190,7 +190,8 @@
                 headers: { 'Content-Type': 'application/json' },
                 body: item
             })
-
+            updateCartDrawer();
+            updateCartItemCounts(cart.item_count);
         });
     });
     }
