@@ -212,7 +212,7 @@
 
       document.querySelectorAll(".remove-from-cart").forEach(function(button) {
           button.addEventListener("click", function() {
-              var lineItemId = this.getAttribute("data-line-item-id");
+              var lineItemId = this.getAttribute("data-line-item-key");
               removeFromCart(lineItemId);
           });
       });
