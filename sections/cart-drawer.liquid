@@ -220,9 +220,10 @@
     function removeFromCart(lineItemId) {
         var url = "/cart/change.js";
         var formData = new FormData();
+        console.log(lineItemId)
         formData.append("line", parseInt(lineItemId, 10));
         formData.append("quantity", 0);  // Setting quantity to 0 will remove the item
-
+        console.log(formData)
         fetch(url, {
             method: "POST",
             body: formData
