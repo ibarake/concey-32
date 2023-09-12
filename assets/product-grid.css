@@ -15,7 +15,8 @@
   transform: scale(1.1);
 }
 
-.product .product-footer:hover + .product-image img {
+.product .product-footer:hover + .product-image img,
+.product:hover .product-image img {
   transform: scale(1.1);
 }
 
