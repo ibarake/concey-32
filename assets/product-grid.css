@@ -22,6 +22,11 @@
   font-weight: 250;
   line-height: normal;
 }
+
+.product-collection {
+  color: #000;
+  
+}
 .product {
   display: flex !important;
   flex-direction: column;
