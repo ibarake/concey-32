@@ -130,6 +130,15 @@
     letter-spacing: 0.25px;
 }
 
+.contact-card.flipped .card-front {
+    transform: rotateY(180deg);
+}
+
+.contact-card.flipped .card-back {
+    transform: rotateY(0deg);
+}
+
+
 @media screen and (max-width: 480px) {
     .contact-title {
         margin-bottom: 4%;
