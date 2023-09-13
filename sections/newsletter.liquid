@@ -13,7 +13,7 @@
   {% form 'customer', class: 'newsletter-form' %}
     <label for="newsletter-email">Email:</label><br>
     <input type="email" id="newsletter-email" name="email" required>
-    <button class="btn-sub" type="submit"><span>Subscribe</span></button>
+    <input class="btn-sub" type="submit"><span>Subscribe</span></button>
   {% endform %}
 </section>
 
@@ -25,6 +25,12 @@
             "type": "text",
             "label": "Newsletter Title",
             "id": "newsletter_title",
+            "default": "Subscribe to Our Newsletter"
+        },
+        {
+            "type": "text",
+            "label": "Newsletter button text",
+            "id": "button-text",
             "default": "Subscribe to Our Newsletter"
         },
         {
