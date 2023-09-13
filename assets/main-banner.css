@@ -45,6 +45,9 @@
 }
 
 @media (max-width: 768px) {
+  .parallax-inner {
+    height: 70vh;
+  }
   .img-parallax {
     width: auto;
     height: 100%;
