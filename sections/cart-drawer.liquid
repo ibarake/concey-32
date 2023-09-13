@@ -1,7 +1,7 @@
 <div class="cart-drawer">
   <div class="cart-drawer-box">
     {% comment %} Header section {% endcomment %}
-    <header class="cart-drawer-header">
+    <div class="cart-drawer-header">
       <h2>Shopping Bag</h2>
 
       <div class="cart-drawer-header-right">
@@ -10,7 +10,7 @@
           {% render 'close-icon' %}
         </button>
       </div>
-    </header>
+    </div>
 
     {% form 'cart', cart, class: 'cart-drawer-form' %}
       {% if cart.item_count == 0 %}
