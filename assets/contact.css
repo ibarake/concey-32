@@ -142,8 +142,58 @@
     z-index: 2;  /* Add this line */
 }
 
+/* Initial styles for the card */
+.contact-card {
+    position: relative;
+}
 
-@media screen and (max-width: 480px) {
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles for the front of the card */
+.card-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+/* Styles for the back of the card */
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+/* Fade effect on hover */
+.contact-card:hover .card-front {
+    opacity: 0;
+}
+
+.contact-card:hover .card-back {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-card:hover .card-front,
+    .contact-card:hover .card-back {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .contact-title {
         margin-bottom: 4%;
         font-size: 24px; 
