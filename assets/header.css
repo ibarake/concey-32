@@ -38,11 +38,14 @@
 }
 
 .left-drawer nav a{
-  color: black;
+  color: #595959;
+font-family: Montserrat;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 48px; /* 171.429% */
+letter-spacing: 1.333px;
   text-decoration: none;
-  font-family: montserrat;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
 .announcement {
