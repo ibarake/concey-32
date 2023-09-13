@@ -267,13 +267,13 @@
   .product-header {
     justify-content: center;
   }
-  #slick-next-arrow svg{
+  .slick-next-arrow svg{
     position: absolute;
     top: 50%;
     right: 0px;
     z-index: 2;
   }
-  #slick-prev-arrow svg{
+  .slick-prev-arrow svg{
     position: absolute;
     top: 50%;
     right: 0px;
