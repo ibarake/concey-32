@@ -91,7 +91,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 10px 20px 10px;
     text-align: center;  
     width: 50%;
     height: 270px;
@@ -103,7 +102,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 10px 20px 10px;
     text-align: center;  
 }
 
