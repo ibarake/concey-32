@@ -165,7 +165,7 @@ header nav li a{
   .responsive {
     display: flex;
   }
-  .nav-icon {
+  .nav-button {
     display: none;
   }
   .main-header {
