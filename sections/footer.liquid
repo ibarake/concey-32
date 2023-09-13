@@ -20,31 +20,32 @@
         </li>
       {%- endfor -%}
     </ul>
-  </div>
-  <div class="footer-icons">
-    {% if settings['fb-link'] != blank %}
-      <div class="icon facebook-icon">
-        <a href="{{ settings.fb-link }}" target="_blank" rel="noopener noreferrer">
-          {% render 'facebook-icon' %}
-        </a>
-      </div>
-    {% endif %}
 
-    {% if settings['tw-link'] != blank %}
-      <div class="icon twitter-icon">
-        <a href="{{ settings.tw-link }}" target="_blank" rel="noopener noreferrer">
-          {% render 'twitter-icon' %}
-        </a>
-      </div>
-    {% endif %}
+    <div class="footer-icons">
+      {% if settings['fb-link'] != blank %}
+        <div class="icon facebook-icon">
+          <a href="{{ settings.fb-link }}" target="_blank" rel="noopener noreferrer">
+            {% render 'facebook-icon' %}
+          </a>
+        </div>
+      {% endif %}
 
-    {% if settings['ig-link'] != blank %}
-      <div class="icon instagram-icon">
-        <a href="{{ settings.ig-link }}" target="_blank" rel="noopener noreferrer">
-          {% render 'instagram-icon' %}
-        </a>
-      </div>
-    {% endif %}
+      {% if settings['tw-link'] != blank %}
+        <div class="icon twitter-icon">
+          <a href="{{ settings.tw-link }}" target="_blank" rel="noopener noreferrer">
+            {% render 'twitter-icon' %}
+          </a>
+        </div>
+      {% endif %}
+
+      {% if settings['ig-link'] != blank %}
+        <div class="icon instagram-icon">
+          <a href="{{ settings.ig-link }}" target="_blank" rel="noopener noreferrer">
+            {% render 'instagram-icon' %}
+          </a>
+        </div>
+      {% endif %}
+    </div>
   </div>
 </footer>
 
