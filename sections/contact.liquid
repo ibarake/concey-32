@@ -47,18 +47,17 @@
     </div>
   </div>
   <script>
-      $(document).ready(function() {
+          $(document).ready(function() {
         // Check if it's a mobile device
         if (window.innerWidth <= 768) {
             $('.contact-card').on('click', function() {
-                const cardFront = $(this).find('.card-front');
-                const cardBack = $(this).find('.card-back');
-                if (cardFront.css('opacity') == '1') {
-                    cardFront.css('opacity', '0');
-                    cardBack.css('opacity', '1');
+                if ($(this).hasClass('flipped')) {
+                    $(this).removeClass('flipped');
                 } else {
-                    cardFront.css('opacity', '1');
-                    cardBack.css('opacity', '0');
+                    // Remove 'flipped' class from all cards
+                    $('.contact-card').removeClass('flipped');
+                    // Add 'flipped' class to the clicked card
+                    $(this).addClass('flipped');
                 }
             });
         }
