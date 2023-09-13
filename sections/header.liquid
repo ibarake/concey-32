@@ -1,6 +1,12 @@
 <header>
   {% if section.settings.show_announcement %}
-    <p class="announcement">{{ section.settings.announcement_text }}</p>
+    {% if section.settings['announcement-link'] %}
+      <a href="{{ section.settings.announcement-link }}" class="announcement">
+        {{- section.settings.announcement_text -}}
+      </a>
+    {% else %}
+      <p class="announcement">{{ section.settings.announcement_text }}</p>
+    {% endif %}
   {% endif %}
   <div class="main-header">
     <div class="nav-icon nav-button">
