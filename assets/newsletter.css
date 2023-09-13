@@ -113,8 +113,6 @@ letter-spacing: 0.313px;
     }
 
     .newsletter-form input[type="email"] {
-        width: 260px;
-        margin-left: 2%;
-        
+        width: 260px;        
     }
 }
