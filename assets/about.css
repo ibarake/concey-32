@@ -17,6 +17,7 @@
 .about-image img {
   height: 720px;
   width: auto;
+  margin: auto;
 }
 
 .btn{
