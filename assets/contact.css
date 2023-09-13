@@ -40,12 +40,11 @@
 }
 
 .contact {
-  width: 90%;
+  width: 85%;
   margin: 100px auto;
 }
 .contact-title {
     margin-top: 78.59px;
-    margin-left: 117.37px;
     color: #1A1A1A;
     font-family: var(--global-font-lato);
     font-size: 32px;
@@ -57,7 +56,6 @@
 
 .contact-paragraph {
     margin-top: 21.13px;
-    margin-left: 117.37px;
     color: #595959;
     font-family: var(--global-font-lato);
     font-size: 20px;
