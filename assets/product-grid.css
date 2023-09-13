@@ -264,4 +264,7 @@
   .slick-buttons{
     display: none;
   }
+  .product-header {
+    justify-content: center;
+  }
 }
