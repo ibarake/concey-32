@@ -294,3 +294,9 @@
   align-items: center;
   gap: 10px;
 }
+
+@media (max-width: 768px) {
+  .cart-drawer-box{
+    width: 80%;
+  }
+}
