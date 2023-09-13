@@ -8,6 +8,7 @@
   transition: left 0.3s;
   z-index: 1000; /* Ensure it's on top */
   overflow-y: auto;
+  filter: drop-shadow(6px 7px 27px rgba(0, 0, 0, 0.4));
 }
 
 .left-drawer.open {
