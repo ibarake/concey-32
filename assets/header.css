@@ -1,7 +1,7 @@
 .left-drawer {
   position: fixed;
   top: 0;
-  left: -110%; /* Initially hide the drawer */
+  left: -100%; /* Initially hide the drawer */
   width: 500px; /* Adjust as needed */
   height: 100%;
   background-color: #fff;
@@ -164,5 +164,8 @@ header nav li a{
 
   header.shrink .main-header {
     padding: 10px 20px; /* adjust as needed */
+  }
+  .left-drawer {
+    width: 80%;
   }
 }
