@@ -10,10 +10,10 @@
       {{ section.settings.newsletter_description }}
     </p>
   </cont-2>
-  {% form 'customer' %}
+  {% form 'customer', class: 'newsletter-form' %}
     <label for="newsletter-email">Email:</label><br>
     <input type="email" id="newsletter-email" name="email" required>
-    <input class="btn-sub" type="submit" value="{{ section.settings.button-text }}">
+    <button class="btn-sub" type="submit"><span>Subscribe</span></button>
   {% endform %}
 </section>
 
@@ -26,12 +26,6 @@
             "label": "Newsletter Title",
             "id": "newsletter_title",
             "default": "Subscribe to Our Newsletter"
-        },
-        {
-            "type": "text",
-            "label": "Newsletter button",
-            "id": "button-text",
-            "default": "Subscribe"
         },
         {
             "type": "textarea",
