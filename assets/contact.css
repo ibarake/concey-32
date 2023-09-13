@@ -163,7 +163,8 @@
     display: none;
   }
   .card-front, .card-back {
-    left: 11%;
+    position: relative;
+    margin: auto;
     width: 70%;
   }
   .contact-card .card-front {
