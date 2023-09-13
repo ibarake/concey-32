@@ -10,10 +10,10 @@
         "type": "header",
         "settings": {
           "main-menu": "main",
-          "show_announcement": true,
+          "show_announcement": false,
           "announcement_text": "This is the announcement bar",
           "announcement-link": "#",
-          "menu-style": true
+          "menu-style": false
         }
       },
       "footer": {
