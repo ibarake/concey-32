@@ -1,3 +1,11 @@
+.announcement {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 0px
+}
 header {
     position: fixed;
     top: 0;
