@@ -267,5 +267,12 @@
   .product-header {
     justify-content: center;
   }
-
+  #slick-next-arrow {
+    top: 50%;
+    right: 0px;
+  }
+  #slick-prev-arrow {
+    top: 50%;
+    right: 0px;
+  }
 }
