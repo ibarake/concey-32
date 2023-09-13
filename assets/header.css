@@ -172,7 +172,7 @@ header nav li a{
     display: none;
   }
   .main-header {
-    width: calc(100% - 40px);
+    width: calc(100vw - 40px);
     padding: 20px 20px;
   }
 
