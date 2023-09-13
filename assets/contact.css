@@ -35,7 +35,11 @@
 }
 
 .box{
-    margin-top: 76.17px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 76.17px;
   filter: drop-shadow(6px 7px 27px rgba(0, 0, 0, 0.04));
   width: 30%;
 }
