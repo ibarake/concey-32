@@ -142,7 +142,7 @@
     display: block;
     color: #9E9E9E;
     font-family: Arial;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -246,12 +246,9 @@
 }
 
 .cart-drawer-footer-row span {
-  color: #9E9E9E;
-  font-family: Arial;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 500;
+  color: #212529;
+  font-size: 14px;
 }
 
 .cart-drawer-button {
