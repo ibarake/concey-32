@@ -14,15 +14,29 @@
   </nav>
 
   <div class="footer-icons">
-    <div class="facebook-icon">
-      {% render 'facebook-icon' %}
-    </div>
-    <div class="twitter-icon">
-      {% render 'twitter-icon' %}
-    </div>
-    <div class="instagram-icon">
-      {% render 'instagram-icon' %}
-    </div>
+    {% if settings.fb_link != blank %}
+      <div class="facebook-icon">
+        <a href="{{ settings.fb_link }}" target="_blank" rel="noopener noreferrer">
+          {% render 'facebook-icon' %}
+        </a>
+      </div>
+    {% endif %}
+
+    {% if settings.tw_link != blank %}
+      <div class="twitter-icon">
+        <a href="{{ settings.tw_link }}" target="_blank" rel="noopener noreferrer">
+          {% render 'twitter-icon' %}
+        </a>
+      </div>
+    {% endif %}
+
+    {% if settings.ig_link != blank %}
+      <div class="instagram-icon">
+        <a href="{{ settings.ig_link }}" target="_blank" rel="noopener noreferrer">
+          {% render 'instagram-icon' %}
+        </a>
+      </div>
+    {% endif %}
   </div>
 </footer>
 
