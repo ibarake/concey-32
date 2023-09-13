@@ -105,4 +105,7 @@
     line-height: 32px; /* 160% */
     letter-spacing: 0.313px;
   }
+  .about-image img{
+    height: 500px;
+  }
 }
