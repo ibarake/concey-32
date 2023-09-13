@@ -131,11 +131,13 @@
 }
 
 .contact-card.flipped .card-front {
+    transition: transform 0.5s;
     transform: rotateY(180deg);
     z-index: 1;  /* Add this line */
 }
 
 .contact-card.flipped .card-back {
+    transition: transform 0.5s;
     transform: rotateY(0deg);
     z-index: 2;  /* Add this line */
 }
