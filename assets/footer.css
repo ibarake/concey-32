@@ -6,11 +6,11 @@
   display: flex;
   justify-content: flex-end;
   gap: 20px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .footer-icons .icon {
-  transform: scale(0.8);
+  transform: scale(0.3);
 }
 
 .footer-icons:hover + footer-navigation, footer-navigation:hover {
