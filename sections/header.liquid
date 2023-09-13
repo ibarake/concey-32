@@ -1,5 +1,5 @@
 <header>
-  {% if show_announcement == true %}
+  {% if section.settings.show_announcement %}
     <p class="announcement">{{ section.settings.announcement_text }}</p>
   {% endif %}
   <div class="main-header">
