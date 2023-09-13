@@ -162,5 +162,8 @@
   .card-front, .card-back {
     left: 17.5%;
   }
-
+  .contact-card:hover .card-front,
+    .contact-card:hover .card-back {
+        transform: none;
+    }
 }
