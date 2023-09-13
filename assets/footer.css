@@ -12,6 +12,10 @@
   padding: 0px;
 }
 
+.list-payment {
+  margin: 0px;
+}
+
 .footer-icons {
   display: flex;
   justify-content: flex-end;
