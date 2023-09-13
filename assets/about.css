@@ -5,7 +5,14 @@
     justify-content: center;
     width: 100%;
 }
-
+.square {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  top: 50%;
+  left: 0px;
+  background-color: var(--light-gray);
+}
 .about-content {
   display: flex;
   flex-direction: column;
