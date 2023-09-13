@@ -37,6 +37,7 @@
   color: var(--main-white);
   text-transform: uppercase;
   font-size: 40px;
+  filter: drop-shadow(6px 7px 27px rgba(0, 0, 0, 0.04));
 }
 
 .parallax-title h1, .parallax-title h2{
