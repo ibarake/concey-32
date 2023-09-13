@@ -105,7 +105,11 @@ letter-spacing: 0.313px;
 
     .newsletter-form{
         max-width: 100%;
-        margin-top: 20px;
+        margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .newsletter-form label{
