@@ -86,9 +86,7 @@
 .cart-drawer-item {
   display: flex;
   align-items: center;
-  border: 1px solid #e7e7e7;
-  border-radius: 12px;
-  background: white;
+  background: var(--light-gray);
   overflow: hidden;
 }
 
