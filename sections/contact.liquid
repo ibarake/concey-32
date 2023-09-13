@@ -18,7 +18,7 @@
             <!-- Back of the Card -->
             <div class="card-back">
               <p>{{ block.settings['back-card-title'] }}</p>
-              <a href="{{ block.settings.back-card-link }}">{{ block.settings['back-card-link-text'] }}</a>
+              <a href="{{ block.settings.button_link }}">{{ block.settings['back-card-link-text'] }}</a>
             </div>
           </div>
         </div>
@@ -65,6 +65,23 @@
             "label": "Card 1 Description",
             "id": "card_description",
             "default": "Leverage agile frameworks to provide a robust synopsis."
+        },
+        {
+            "type": "text",
+            "label": "Card Title",
+            "id": "back-card-title",
+            "default": "Phone number"
+        },
+        {
+            "type": "text",
+            "label": "Card link text",
+            "id": "back-card-link-text",
+            "default": "Phone number"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
         }
       ]
     }],
