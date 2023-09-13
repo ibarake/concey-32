@@ -164,20 +164,10 @@
   }
   .contact-card .card-front {
         transform: none;
-    opacity: 1;
     }
 
     .contact-card .card-back {
         transform: none;
-        opacity: 0;
-    }
-
-    .contact-card.flipped .card-front {
-        opacity: 0;
-    }
-
-    .contact-card.flipped .card-back {
-        opacity: 1;
     }
   
 }
