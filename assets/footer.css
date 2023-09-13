@@ -11,6 +11,7 @@
 
 .footer-icons .icon svg{
   width: 20px;
+  height: 20px;
 }
 
 .footer-icons:hover + footer-navigation, footer-navigation:hover {
