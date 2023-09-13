@@ -9,7 +9,7 @@
     {% endif %}
   {% endif %}
   <div class="main-header">
-    {% if menu-style %}
+    {% if section.settings['menu-style'] %}
       <div class="nav-icon nav-button">
         {% render 'nav-icon' %}
       </div>
@@ -27,15 +27,17 @@
       <!-- <button class="cart-btn" onclick="window.openCartDrawer()">{% render 'add-to-cart-icon' %}</button> -->
     </div>
   </div>
-  <nav>
-    <ul class="header-menu">
-      {% for link in section.settings['main-menu'].links %}
-        <li class="menu-item">
-          <a href="{{ link.url }}" class="menu-item-link">{{ link.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
+  {% if section.settings['menu-style'] %}
+    <nav>
+      <ul class="header-menu">
+        {% for link in section.settings['main-menu'].links %}
+          <li class="menu-item">
+            <a href="{{ link.url }}" class="menu-item-link">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  {% endif %}
 </header>
 <div class="left-drawer">
   <button class="close-drawer-btn">X</button>
