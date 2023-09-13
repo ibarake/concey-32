@@ -7,7 +7,7 @@
   margin: 0px;
   background-color: var(--main-gray);
   color: black;
-  text-transform: none;
+  text-decoration: none;
 }
 header {
     position: fixed;
