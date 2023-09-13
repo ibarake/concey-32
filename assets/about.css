@@ -111,4 +111,7 @@
   .square {
     display: none;
   }
+  .about-content {
+    padding: 10px;
+  }
 }
