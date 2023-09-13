@@ -10,7 +10,7 @@
 }
 
 .footer-icons .icon {
-  transform: scale(0.3);
+  font-size: 32px;
 }
 
 .footer-icons:hover + footer-navigation, footer-navigation:hover {
