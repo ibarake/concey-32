@@ -35,7 +35,14 @@
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
-  
+}
+
+.left-drawer nav a{
+  color: black;
+  text-decoration: none;
+  font-family: montserrat;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .announcement {
