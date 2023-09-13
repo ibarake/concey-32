@@ -67,6 +67,7 @@
 .cart-drawer-header-right-close {
   cursor: pointer;
   border: none;
+  background: transparent;
 }
 
 .cart-drawer-header-right-close:hover {
