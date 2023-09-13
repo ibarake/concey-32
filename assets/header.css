@@ -157,9 +157,14 @@ header nav li a{
   background-color: #fff;
 }
 
-
+.responsive {
+  display: none;
+}
 
 @media (max-width: 768px) {
+  .responsive {
+    display: flex;
+  }
   .nav-icon {
     display: none;
   }
