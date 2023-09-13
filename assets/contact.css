@@ -91,7 +91,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: fit-content;
+  height: 270px;
 }
 .card-front, .card-back {
     display: flex;
