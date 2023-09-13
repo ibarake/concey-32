@@ -118,6 +118,7 @@
 .cart-drawer-item-main-flex-left {
   flex: 1;
   position: relative;
+  width: 100%;
 }
 
 .cart-drawer-item-main-flex-left h3 {
