@@ -6,7 +6,7 @@
 
 .about-image {
     width: 391.624px;
-    height: 496px;
+    height: fit-content;
     flex-shrink: 0;
 }
 
