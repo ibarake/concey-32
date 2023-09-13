@@ -98,6 +98,18 @@
     border: 2px solid #9E9E9E;
     background: #FFF;
 }
+.card-front, .card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 20px 10px;
+    text-align: center;  
+    width: 50%;
+    height: 270px;
+    border: 2px solid #9E9E9E;
+    background: #FFF;
+}
 
 .card-icon{
 
