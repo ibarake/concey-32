@@ -79,7 +79,7 @@ letter-spacing: 0.313px;
     letter-spacing: 0.25px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .newsletter-section  {
         margin-left: 25px;
         display: flex;
@@ -93,14 +93,14 @@ letter-spacing: 0.313px;
         font-size: 24px;
         line-height: 36px;
         text-align: center;
-        margin-right: 8%;
+        margin: auto;
     }
 
     .content-newsletter{
         font-size: 16px;
         line-height: 24px;
         text-align: center;
-        margin-right: 4%;
+        margin: auto;
     }
 
     .newsletter-form{
@@ -110,7 +110,6 @@ letter-spacing: 0.313px;
     .newsletter-form label{
         font-size: 16px;
         line-height: 24px;
-        margin-left: 38%;
     }
 
     .newsletter-form input[type="email"] {
