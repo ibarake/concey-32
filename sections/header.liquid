@@ -36,25 +36,48 @@
       {% endfor %}
     </ul>
   </nav>
-  <script>
-        document.addEventListener('DOMContentLoaded', function() {
-      var header = document.querySelector('header');
-      var initialHeight = header.offsetHeight;
-
-      window.addEventListener('scroll', function() {
-        if (window.scrollY > initialHeight) {
-          header.classList.add('shrink');
-        } else {
-          header.classList.remove('shrink');
-        }
-      });
-    });
-  </script>
 </header>
 <div class="left-drawer">
   <button class="close-drawer-btn">X</button>
   <!-- Add any content you want in the drawer here -->
 </div>
+<script>
+          document.addEventListener('DOMContentLoaded', function() {
+        var header = document.querySelector('header');
+        var initialHeight = header.offsetHeight;
+
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > initialHeight) {
+            header.classList.add('shrink');
+          } else {
+            header.classList.remove('shrink');
+          }
+        });
+      });
+      document.addEventListener('DOMContentLoaded', function() {
+    var header = document.querySelector('header');
+    var initialHeight = header.offsetHeight;
+    var leftDrawer = document.querySelector('.left-drawer');
+    var closeDrawerBtn = document.querySelector('.close-drawer-btn');
+    var navIcon2 = document.querySelector('.nav-icon-2');
+
+    navIcon2.addEventListener('click', function() {
+      leftDrawer.classList.add('open');
+    });
+
+    closeDrawerBtn.addEventListener('click', function() {
+      leftDrawer.classList.remove('open');
+    });
+
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > initialHeight) {
+        header.classList.add('shrink');
+      } else {
+        header.classList.remove('shrink');
+      }
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "header",
