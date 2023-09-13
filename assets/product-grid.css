@@ -270,9 +270,11 @@
   #slick-next-arrow {
     top: 50%;
     right: 0px;
+    z-index: 2;
   }
   #slick-prev-arrow {
     top: 50%;
     right: 0px;
+    z-index: 2;
   }
 }
