@@ -4,8 +4,8 @@
     "theme_name": "Concey-32-by-kymbo",
     "theme_version": "1.0.0",
     "theme_author": "Kymbo devs",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "Logo",
@@ -19,6 +19,26 @@
         "type": "image_picker",
         "id": "favicon",
         "label": "Fav Icon"
+      }
+    ]
+  },
+  {
+    "name": "social",
+    "settings": [
+      {
+        "type": "text",
+        "id": "ig-link",
+        "label": "Instagram link"
+      },
+      {
+        "type": "text",
+        "id": "fb-link",
+        "label": "Facebook link"
+      },
+      {
+        "type": "text",
+        "id": "tw-link",
+        "label": "Twitter link"
       }
     ]
   }
