@@ -40,7 +40,7 @@
   {% endif %}
 </header>
 <div class="left-drawer">
-  <button class="close-drawer-btn">X</button>
+  <button class="close-drawer-btn">{% render 'close-menu' %}</button>
   <nav>
     <ul class="drawer-menu">
       {% for link in section.settings['main-menu'].links %}
