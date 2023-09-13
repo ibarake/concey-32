@@ -1,7 +1,7 @@
 .left-drawer {
   position: fixed;
   top: 0;
-  left: -100%; /* Initially hide the drawer */
+  left: -110%; /* Initially hide the drawer */
   width: 500px; /* Adjust as needed */
   height: 100%;
   background-color: #fff;
