@@ -89,11 +89,20 @@
     {% section 'cart-drawer' %}
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-      $('.slick-carousel').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        arrows: false
+            $('.slick-carousel').slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: false,
+          responsive: [
+              {
+                  breakpoint: 768, // breakpoint at 768px width
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                  }
+              }
+          ]
       });
     </script>
   </body>
