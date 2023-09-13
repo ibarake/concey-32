@@ -160,7 +160,7 @@
     display: none;
   }
   .card-front, .card-back {
-    left: 17.5%;
+    left: 20%;
   }
   .contact-card .card-front {
         transform: none;
