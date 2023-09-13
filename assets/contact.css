@@ -31,13 +31,14 @@
 }
 
 /* Flip effect on hover */
-.contact-card:hover .card-front {
+.box:hover .card-front {
     transform: rotateY(180deg);
 }
 
-.contact-card:hover .card-back {
+.box:hover .card-back {
     transform: rotateY(0deg);
 }
+
 
 .contact {
   width: 90%;
@@ -68,7 +69,7 @@
     
 }
 
-.block-container {
+.block-conainer {
   display: flex;
   flex-direction : row;
   justify-content: center;
