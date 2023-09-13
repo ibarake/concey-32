@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: -100%; /* Initially hide the drawer */
-  width: 250px; /* Adjust as needed */
+  width: 500px; /* Adjust as needed */
   height: 100%;
   background-color: #fff;
   transition: left 0.3s;
@@ -21,7 +21,7 @@
   cursor: pointer;
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
 }
 
 .announcement {
