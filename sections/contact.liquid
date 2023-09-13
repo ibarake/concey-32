@@ -47,7 +47,22 @@
     </div>
   </div>
   <script>
-           $(document).ready(function() {
+        $(document).ready(function() {
+        // Check if it's a mobile device
+        if (window.innerWidth <= 768) {
+            $('.contact-card').on('click', function() {
+                if ($(this).hasClass('flipped')) {
+                    $(this).removeClass('flipped');
+                } else {
+                    // Remove 'flipped' class from all cards
+                    $('.contact-card').removeClass('flipped');
+                    // Add 'flipped' class to the clicked card
+                    $(this).addClass('flipped');
+                }
+            });
+        }
+    });
+      $(document).ready(function() {
         // Check if it's a mobile device
         if (window.innerWidth <= 768) {
             $('.contact-card').on('click', function() {
