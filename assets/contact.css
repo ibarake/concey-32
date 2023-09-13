@@ -126,6 +126,17 @@
     letter-spacing: 0.25px;
 }
 
+.box a {
+  color: #9E9E9E;
+  text-decoration: none;
+  border-radius: 50px;
+    border: 1px solid #9E9E9E;
+    height: 2em;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 @media screen and (max-width: 768px) {
     .contact-card:hover .card-front {
     transform: none;
@@ -173,5 +184,5 @@
     .contact-card .card-back {
         transform: none;
     }
-  
+    
 }
