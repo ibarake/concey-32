@@ -262,6 +262,6 @@
     font-size: 32px;
   }
   .slick-buttons{
-    margin-right: 0px;
+    display: none;
   }
 }
