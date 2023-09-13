@@ -3,13 +3,13 @@
 }
 
 .under-footer {
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 0px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .list-payment {
