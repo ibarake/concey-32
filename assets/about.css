@@ -97,13 +97,7 @@
 
   .about-text {
     margin: auto;
-    color: #595959;
-    font-family: Lato;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px; /* 160% */
-    letter-spacing: 0.313px;
+    width: 100%;
   }
   .about-image img{
     height: 500px;
