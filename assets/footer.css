@@ -9,8 +9,8 @@
   margin: 10px;
 }
 
-.footer-icons .icon {
-  font-size: 32px;
+.footer-icons .icon svg{
+  size: 32px;
 }
 
 .footer-icons:hover + footer-navigation, footer-navigation:hover {
