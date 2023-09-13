@@ -279,4 +279,7 @@
     left: 0px;
     z-index: 2;
   }
+  .stilized-image {
+    margin: 50px auto;
+  }
 }
