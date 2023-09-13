@@ -145,13 +145,14 @@
     }
 
     .box {
-      margin: 0px;
+        margin-left: 20px; 
+        margin-left: 20px; 
         position: relative;
         display: flex; 
         overflow: scroll; 
         scroll-snap-type: x mandatory; 
     
-    }
+}
     .contact-box {
         width: 100%;
     }
