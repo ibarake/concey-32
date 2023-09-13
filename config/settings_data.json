@@ -9,7 +9,11 @@
       "header": {
         "type": "header",
         "settings": {
-          "main-menu": "main"
+          "main-menu": "main",
+          "show_announcement": true,
+          "announcement_text": "This is the announcement bar",
+          "announcement-link": "#",
+          "menu-style": true
         }
       },
       "footer": {
