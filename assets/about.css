@@ -11,6 +11,11 @@
     flex-shrink: 0;
 }
 
+.about-image img {
+  height: 720px;
+  width: auto;
+}
+
 .btn{
     margin-left: 106.27px;
     margin-bottom: 33px;
