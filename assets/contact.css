@@ -87,6 +87,11 @@
 }
 .contact-card {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
 }
 .card-front, .card-back {
     display: flex;
