@@ -285,3 +285,7 @@
   justify-content: space-between;
   align-items: flex-end;
 }
+
+.list-payment {
+  list-style: none;
+}
