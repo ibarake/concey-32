@@ -276,7 +276,7 @@
   .slick-prev-arrow{
     position: absolute;
     top: 50%;
-    right: 0px;
+    left: 0px;
     z-index: 2;
   }
 }
