@@ -15,7 +15,7 @@ header {
     width: 100%;
     background: var(--main-white);
   height: fit-content;
-    max-height: 120px;
+    max-height: 150px;
 }
 header.shrink .site-logo{
   transform: scale(0.8);
