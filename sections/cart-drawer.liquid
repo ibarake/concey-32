@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    {% form 'cart', cart, class: 'cart-drawer-form' %}
+    {% form 'cart', cart, class: 'cart-drawer-form', action: '/checkout' %}
       {% if cart.item_count == 0 %}
         <p class="cart-drawer-empty">Your cart is empty</p>
       {% else %}
