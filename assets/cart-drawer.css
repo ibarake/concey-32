@@ -146,6 +146,7 @@
     font-weight: 400;
     line-height: normal;
     width: 100%;
+  text-align: left;
 }
 
 .cart-drawer-item-main-flex-left button  {
