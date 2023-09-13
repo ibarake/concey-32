@@ -44,18 +44,6 @@
   <!-- Add any content you want in the drawer here -->
 </div>
 <script>
-          document.addEventListener('DOMContentLoaded', function() {
-        var header = document.querySelector('header');
-        var initialHeight = header.offsetHeight;
-
-        window.addEventListener('scroll', function() {
-          if (window.scrollY > initialHeight) {
-            header.classList.add('shrink');
-          } else {
-            header.classList.remove('shrink');
-          }
-        });
-      });
       document.addEventListener('DOMContentLoaded', function() {
     var header = document.querySelector('header');
     var initialHeight = header.offsetHeight;
