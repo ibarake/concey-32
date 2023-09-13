@@ -10,7 +10,7 @@
 }
 
 .footer-icons .icon svg{
-  size: 32px;
+  width: 20px;
 }
 
 .footer-icons:hover + footer-navigation, footer-navigation:hover {
