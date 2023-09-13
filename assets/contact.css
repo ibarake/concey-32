@@ -152,9 +152,12 @@
         overflow: scroll; 
         scroll-snap-type: x mandatory; 
     
+}
     .contact-box {
         width: 100%;
     }
-}
+  .block-container {
+    display: none;
+  }
 
 }
