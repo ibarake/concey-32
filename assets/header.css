@@ -6,6 +6,8 @@
   padding: 10px 20px;
   margin: 0px;
   background-color: var(--main-gray);
+  color: black;
+  text-transform: none;
 }
 header {
     position: fixed;
