@@ -69,13 +69,11 @@
             <h3>Bag Total</h3>
             <span>{{ cart.total_price | money }}</span>
           </div>
-          <button
-            type="submit"
-            name="Paypal"
-            class="cart-drawer-button-paypal"
-          >
-            GO TO CHECKOUT
-          </button>
+          {%- for type in shop.enabled_payment_types -%}
+            <li class="list-payment__item">
+              {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+            </li>
+          {%- endfor -%}
           <button
             type="submit"
             name="GO TO CHECKOUT"
