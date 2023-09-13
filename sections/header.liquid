@@ -9,9 +9,15 @@
     {% endif %}
   {% endif %}
   <div class="main-header">
-    <div class="nav-icon nav-button">
-      {% render 'nav-icon' %}
-    </div>
+    {% if menu-style %}
+      <div class="nav-icon nav-button">
+        {% render 'nav-icon' %}
+      </div>
+    {% else %}
+      <div class="nav-icon nav-button-2">
+        {% render 'nav-icon' %}
+      </div>
+    {% endif %}
     <div class="site-logo">
       {{ settings.logo | image_url: width: '150px' | image_tag }}
     </div>
