@@ -256,3 +256,9 @@
 .qty-input .qty-count:disabled:after {
 	background: #ccc;
 }
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 32px;
+  }
+}
