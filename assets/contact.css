@@ -159,5 +159,8 @@
   .block-container {
     display: none;
   }
+  .card-front, .card-back {
+    left: 17.5%;
+  }
 
 }
