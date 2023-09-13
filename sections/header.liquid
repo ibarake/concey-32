@@ -41,7 +41,15 @@
 </header>
 <div class="left-drawer">
   <button class="close-drawer-btn">X</button>
-  <!-- Add any content you want in the drawer here -->
+  <nav>
+    <ul class="drawer-menu">
+      {% for link in section.settings['main-menu'].links %}
+        <li class="drawer-menu-item">
+          <a href="{{ link.url }}" class="drawer-menu-item-link">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
 </div>
 <script>
         document.addEventListener('DOMContentLoaded', function() {
