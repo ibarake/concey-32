@@ -5,6 +5,9 @@
     width: 100%;
 }
 
+.about-content {
+  width: 50%;
+}
 .about-image {
     width: 50%;
     height: fit-content;
