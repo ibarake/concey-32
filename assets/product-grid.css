@@ -23,7 +23,7 @@
 
 .product-grid {
   margin: 100px auto;
-  width: 85%;
+  width: 80%;
 }
 .price {
   font-family: Proxima nova regular !important;
@@ -89,7 +89,7 @@
 .section-title {
   color: #595959;
   font-family: Montserrat;
-  font-size: 28px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: 48px; /* 171.429% */
