@@ -85,7 +85,9 @@
   width: 30%;
   margin: auto;
 }
-
+.contact-card {
+  width: 100%;
+}
 .card-front, .card-back {
     display: flex;
     flex-direction: column;
