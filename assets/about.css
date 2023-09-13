@@ -6,7 +6,7 @@
 }
 
 .about-image {
-    width: auto;
+    width: 50%;
     height: fit-content;
     flex-shrink: 0;
 }
