@@ -83,6 +83,10 @@
     {{ content_for_header }}
   </head>
   <body>
+    <div style="display:none;">
+      <div id="slick-next-arrow">{% render 'next-arrow' %}</div>
+      <div id="slick-prev-arrow">{% render 'prev-arrow' %}</div>
+    </div>
     {% section 'header' %}
     {{ content_for_layout }}
     {% section 'footer' %}
@@ -109,9 +113,5 @@
           ]
       });
     </script>
-    <div style="display:none;">
-      <div id="slick-next-arrow">{% render 'next-arrow' %}</div>
-      <div id="slick-prev-arrow">{% render 'prev-arrow' %}</div>
-    </div>
   </body>
 </html>
