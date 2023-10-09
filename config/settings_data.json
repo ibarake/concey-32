@@ -13,7 +13,7 @@
           "show_announcement": false,
           "announcement_text": "This is the announcement bar",
           "announcement-link": "#",
-          "menu-style": false
+          "menu-style": true
         }
       },
       "footer": {
