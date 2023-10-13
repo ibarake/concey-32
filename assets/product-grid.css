@@ -74,7 +74,7 @@
 .product .product-footer {
   padding: 20px 20px 20px 0px;
   background: var(--main-white);
-  width: 70%;
+  width: 100%;
 }
 .product-section {
   box-sizing: border-box;
