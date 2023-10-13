@@ -183,6 +183,7 @@
 
 .qty-input .product-qty {
 	width: 15px;
+  height: 10px;
 	min-width: 0;
 	display: inline-block;
 	text-align: center;
