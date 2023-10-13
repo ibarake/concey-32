@@ -30,17 +30,16 @@
       <!-- <button class="cart-btn" onclick="window.openCartDrawer()">{% render 'add-to-cart-icon' %}</button> -->
     </div>
   </div>
-  {% if section.settings['menu-style'] %}
-    <nav class="header-nav">
-      <ul class="header-menu">
-        {% for link in section.settings['main-menu'].links %}
-          <li class="menu-item">
-            <a href="{{ link.url }}" class="menu-item-link">{{ link.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
-  {% endif %}
+
+  <nav class="header-nav">
+    <ul class="header-menu">
+      {% for link in section.settings['main-menu'].links %}
+        <li class="menu-item">
+          <a href="{{ link.url }}" class="menu-item-link">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
 </header>
 <div class="left-drawer">
   <button class="close-drawer-btn">{% render 'close-menu' %}</button>
