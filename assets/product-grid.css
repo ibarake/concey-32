@@ -221,14 +221,6 @@
 	margin: auto;
 }
 
-.qty-input .qty-count--minus {
-	border-right: 1px solid var(--gray);
-}
-
-.qty-input .qty-count--add {
-	border-left: 1px solid var(--gray);
-}
-
 .qty-input .qty-count--add:after {
 	transform: rotate(90deg);
 }
