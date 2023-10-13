@@ -45,28 +45,32 @@
   </nav>
 </div>
 <script>
-        document.addEventListener('DOMContentLoaded', function() {
-      var header = document.querySelector('header');
-      var initialHeight = header.offsetHeight;
-      var leftDrawer = document.querySelector('.left-drawer');
-      var closeDrawerBtn = document.querySelector('.close-drawer-btn');
-      var navIcon2 = document.querySelector('.nav-icon-2');
+          document.addEventListener('DOMContentLoaded', function() {
 
-      window.addEventListener('scroll', function() {
-        if (window.scrollY > initialHeight) {
-          header.classList.add('shrink');
-        } else {
-          header.classList.remove('shrink');
-        }
+        var header = document.querySelector('header');
+        var initialHeight = header.offsetHeight;
+        var leftDrawer = document.querySelector('.left-drawer');
+        var closeDrawerBtn = document.querySelector('.close-drawer-btn');
+        var navIcon2 = document.querySelector('.nav-icon-2');
+
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > initialHeight) {
+            header.classList.add('shrink');
+          } else {
+            header.classList.remove('shrink');
+          }
+        });
+
+            navIcon2.addEventListener('click', function() {
+      leftDrawer.classList.add('open');
+      document.body.classList.add('drawer-opened');  // Add class to body
+  });
+
+  closeDrawerBtn.addEventListener('click', function() {
+      leftDrawer.classList.remove('open');
+      document.body.classList.remove('drawer-opened');  // Remove class from body
+  });
       });
-
-          navIcon2.addEventListener('click', function() {
-    leftDrawer.classList.add('open');
-  });
-              closeDrawerBtn.addEventListener('click', function() {
-    leftDrawer.classList.remove('open');
-  });
-    });
 </script>
 {% schema %}
 {
