@@ -19,7 +19,6 @@
             {{ product.images.first.src | image_url: width: '500' | image_tag }}
           </div>
           <div class="product-footer">
-            <h4 class="product-collection">{{ product.collections.first.title }}</h4>
             <h3 class="product-title">{{ product.title }}</h3>
             <div class="price-cart">
               <p class="price">{{ product.price | money_with_currency }}</p>
