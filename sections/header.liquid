@@ -9,18 +9,9 @@
     {% endif %}
   {% endif %}
   <div class="main-header">
-    {% if section.settings['menu-style'] %}
-      <div class="nav-icon-2 nav-button-2">
-        {% render 'nav-icon' %}
-      </div>
-      <div class="nav-icon-2 nav-button-2 responsive">
-        {% render 'nav-icon' %}
-      </div>
-    {% else %}
-      <div class="nav-icon-2 nav-button-2">
-        {% render 'nav-icon' %}
-      </div>
-    {% endif %}
+    <div class="nav-icon-2 nav-button-2">
+      {% render 'nav-icon' %}
+    </div>
     <div class="site-logo">
       {{ settings.logo | image_url: width: '180px' | image_tag: width: '180px' }}
     </div>
