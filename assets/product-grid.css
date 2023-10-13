@@ -155,7 +155,11 @@
   border: none;
   cursor: pointer;
 }
-
+.add-to-cart-bag-btn svg {
+  height: 2em;
+  width: auto;
+  overflow: visible;
+}
 .qty-input {
 	color: var(--gray);
 	background: transparent;
