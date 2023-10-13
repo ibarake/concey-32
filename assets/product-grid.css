@@ -159,6 +159,7 @@
   height: 1.8rem;
   width: auto;
   overflow: visible;
+  margin: auto;
 }
 .qty-input {
 	color: var(--gray);
