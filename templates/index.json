@@ -4,8 +4,8 @@
       "type": "main-banner",
       "settings": {
         "parallax-image": "shopify:\/\/shop_images\/33497d9bc4977d1cfa66d1dc99d603d3.png",
-        "title": "Concey 32",
-        "subtitle": "The story continues"
+        "title": "",
+        "subtitle": ""
       }
     },
     "c1ecc6d6-be3d-4752-b587-1602268028a6": {
@@ -37,7 +37,10 @@
           "settings": {
             "card_title": "Phone number",
             "card_icon": "shopify:\/\/shop_images\/phone-icon.png",
-            "card_description": "Leverage agile frameworks to provide a robust synopsis."
+            "card_description": "Leverage agile frameworks to provide a robust synopsis.",
+            "back-card-title": "Phone number",
+            "back-card-link-text": "Phone number",
+            "button_link": ""
           }
         },
         "d0478d3e-d697-46d0-8af0-8aced3e35525": {
@@ -45,7 +48,10 @@
           "settings": {
             "card_title": "Email",
             "card_icon": "shopify:\/\/shop_images\/email-icon.png",
-            "card_description": "Leverage agile frameworks to provide a robust synopsis."
+            "card_description": "Leverage agile frameworks to provide a robust synopsis.",
+            "back-card-title": "Phone number",
+            "back-card-link-text": "Phone number",
+            "button_link": ""
           }
         },
         "7c8b92eb-3c18-425f-a0af-c4707db8f9e8": {
@@ -53,7 +59,10 @@
           "settings": {
             "card_title": "Location",
             "card_icon": "shopify:\/\/shop_images\/location-icon.png",
-            "card_description": "Leverage agile frameworks to provide a robust synopsis."
+            "card_description": "Leverage agile frameworks to provide a robust synopsis.",
+            "back-card-title": "Phone number",
+            "back-card-link-text": "Phone number",
+            "button_link": ""
           }
         }
       },
@@ -71,6 +80,7 @@
       "type": "newsletter",
       "settings": {
         "newsletter_title": "Subscribe to Our Newsletter",
+        "button-text": "Subscribe",
         "newsletter_description": "Sign up to receive our latest updates and promotions."
       }
     }
