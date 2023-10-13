@@ -13,8 +13,10 @@
       {% render 'nav-icon' %}
     </div>
     <div class="site-logo">
-      {{ settings.logo | image_url: width: '1000' | image_tag: width: '180px', class: 'logo' }}
-      {{ settings.logo | image_url: width: '1000' | image_tag: width: '150px', class: 'logo-responsive responsive' }}
+      <a href="/">
+        {{ settings.logo | image_url: width: '1000' | image_tag: width: '180px', class: 'logo' }}
+        {{ settings.logo | image_url: width: '1000' | image_tag: width: '150px', class: 'logo-responsive responsive' }}
+      </a>
     </div>
 
     <div class="nav-icon cart-drawer-toggle">
