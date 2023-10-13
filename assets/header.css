@@ -163,6 +163,9 @@ header nav li a{
 }
 
 @media (max-width: 768px) {
+  .logo{
+    display: none;
+  }
   .header-nav {
     display: none;
   }
