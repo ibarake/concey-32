@@ -111,6 +111,12 @@ header.shrink .cart-btn svg {
   transform-origin: center top;
 }
 
+body.drawer-opened .main-header:hover + nav, 
+body.drawer-opened nav:hover {
+  transform: none;
+  transition: none;
+}
+
 .nav-icon{
   height: 100%;
   display: flex;
