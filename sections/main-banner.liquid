@@ -9,6 +9,7 @@
   <script>
     
     
+    
 window.addEventListener('scroll', function() {
     const parallaxImage = document.querySelector('.img-parallax');
     const parallaxTitle = document.querySelector('.parallax-title');
@@ -21,9 +22,10 @@ window.addEventListener('scroll', function() {
     // Fading effect
     const fadeEndPoint = 500;  // Set this to where you want the opacity to be 0.2
     let opacity = 1 - (0.8 * scrolled / fadeEndPoint);
-    opacity = Math.max(opacity, 0.2);
+    opacity = Math.max(opacity, 0);
     parallaxImage.style.opacity = opacity;
 });
+
 
 
 
