@@ -12,6 +12,8 @@
     
     
     
+    
+    
 window.addEventListener('scroll', function() {
     const parallaxImage = document.querySelector('.img-parallax');
     const parallaxTitle = document.querySelector('.parallax-title');
@@ -26,7 +28,17 @@ window.addEventListener('scroll', function() {
     let opacity = 1 - (0.8 * scrolled / fadeEndPoint);
     opacity = Math.max(opacity, 0.1);
     parallaxImage.style.opacity = opacity;
+
+    // Shrinking effect
+    const initialHeight = 600; // Set this to your initial section height in pixels
+    const minHeight = 400; // Set this to your desired minimum height in pixels
+    const shrinkEndPoint = 500;
+    let height = initialHeight - ((initialHeight - minHeight) * scrolled / shrinkEndPoint);
+    height = Math.max(height, minHeight);
+    parallaxSection.style.height = `${height}px`;
 });
+
+
 
 
 
