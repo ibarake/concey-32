@@ -6,12 +6,12 @@
     width: 100%;
 }
 .about-content {
-  padding: 0px 0px 0px 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
+  width: 85%;
+  margin: auto;
 }
 .about-image {
     width: 50%;
