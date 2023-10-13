@@ -160,7 +160,7 @@
   align-items: center;
 }
 .add-to-cart-bag-btn svg {
-  height: 1.8rem;
+  height: 1.7rem;
   width: auto;
   overflow: visible;
   margin: auto;
@@ -181,7 +181,7 @@
 	border: none;
 	display: inline-block;
 	min-width: 0;
-	height: 1.8rem;
+	height: 1.7rem;
 	line-height: 1;
 }
 
