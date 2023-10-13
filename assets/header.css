@@ -113,8 +113,8 @@ header.shrink .cart-btn svg {
 
 body.drawer-opened .main-header:hover + nav, 
 body.drawer-opened nav:hover {
-  transform: none;
-  transition: none;
+  transform: none !important;
+  transition: none !important;
 }
 
 .nav-icon{
